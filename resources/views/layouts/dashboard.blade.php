@@ -36,28 +36,49 @@
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav" style="margin-left:70px;">
-              <li class="active"  style="margin-left:30px;"><a href="/">Home<span class="sr-only">(current)</span></a></li>
-              <li  style="margin-left:30px;"><a href="/skills">Skills/Tips</a></li>
-              <li  style="margin-left:30px;"><a href="#">Vacanties</a></li>
 
-            </ul>
-            <form class="navbar-form navbar-left"  style="margin-left:50px;">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Link</a></li>
 
                 <!-- Right Side Of Navbar -->
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav">
+
                     <!-- Authentication Links -->
                     @if (Auth::guest())
+                    <ul class="nav navbar-nav" style="margin-left:70px;">
+                      <li class="active"  style="margin-left:30px;"><a href="/">Home<span class="sr-only">(current)</span></a></li>
+                      <li  style="margin-left:30px;"><a href="/skills">Skills/Tips</a></li>
+                      <li  style="margin-left:30px;"><a href="#">Vacanties</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left"  style="margin-left:50px;">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                      </div>
+                      <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
                         <li><a href="{{ route('login') }}">Login</a></li>
                         <li><a href="{{ route('register') }}">Register</a></li>
                     @else
+                    <ul class="nav navbar-nav" style="margin-left:70px;">
+                      <li class="active"  style="margin-left:30px;"><a href="/">Home<span class="sr-only">(current)</span></a></li>
+                      <li  style="margin-left:30px;"><a href="/skills">Skills/Tips</a></li>
+                      <li  style="margin-left:30px;"><a href="#">Skills</a></li>
+                      <li class="dropdown"  style="margin-left:30px;">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Fiels</a></li>
+                          <li><a href="#">Intership</a></li>
+                          <li><a href="#">Jobs</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="navbar-form navbar-left"  style="margin-left:50px;">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                      </div>
+                      <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="/dashboard">Dashboard</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 {{ Auth::user()->name }} <span class="caret"></span>
@@ -84,8 +105,45 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="panel panel-default">
+        <div class="panel-heading">Panel heading without title</div>
+        <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="image/ismg.png" alt="...">
+        </a>
+      </div>
+        <div class="panel-body" style="margin-top:50px;">
 
+          <div class="list-group">
+            <a href="#" class="list-group-item active">
+              Cras justo odio
+            </a>
+            <a href="/dashboard" class="list-group-item">Dashboard</a>
+            <a href="/personal_details" class="list-group-item">Personal Data</a>
+            <a href="/contact_detail" class="list-group-item">Contact Details</a>
+            <a href="#" class="list-group-item">Academic Level</a>
+            <a href="#" class="list-group-item">Language Proficiency</a>
+            <a href="#" class="list-group-item">Work Experience</a>
+            <a href="#" class="list-group-item">Training & Workshops Attended</a>
+            <a href="#" class="list-group-item">Attachments</a>
+            <a href="#" class="list-group-item">Vestibulum at eros</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8">
         @yield('content')
+
+      </div>
+        </div>
+
+
+      </div>
+
     </div>
 
     <footer>

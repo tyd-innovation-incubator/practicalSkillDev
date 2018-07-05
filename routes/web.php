@@ -22,3 +22,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/skills', function () {
     return view('pages.skills');
 });
+
+Route::get('/index', function () {
+    return view('index');
+});
+Route::get('/dashboard', function () {
+    return view('pages.dashboard');
+});
+Route::resource('/personal_details', 'PersonalDetailsController' );
+
+
+Route::get('/contact_detail',function(){
+  return view('pages.contactDetail');
+});
