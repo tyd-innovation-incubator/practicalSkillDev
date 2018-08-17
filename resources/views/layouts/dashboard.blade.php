@@ -45,7 +45,7 @@
                     @if (Auth::guest())
                     <ul class="nav navbar-nav" style="margin-left:70px;">
                       <li class="active"  style="margin-left:30px;"><a href="/">Home<span class="sr-only">(current)</span></a></li>
-                      <li  style="margin-left:30px;"><a href="/skills">Skills/Tips</a></li>
+                      <li  style="margin-left:30px;"><a href="/posts">Skills/Tips</a></li>
                       <li  style="margin-left:30px;"><a href="#">Vacanties</a></li>
                     </ul>
                     <form class="navbar-form navbar-left"  style="margin-left:50px;">

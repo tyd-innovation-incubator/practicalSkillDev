@@ -1,0 +1,65 @@
+.section-lg-34 .fa{font-size:50px;}
+.map{width:100%;height:500px;}
+.map-wrap{position:relative;}
+.btn-view-more{padding:2px 15px!important;font-size:12px;}
+.overlay{width:100%;min-height:500px;position:absolute;top:0;}
+.find-job-padding-top{padding-top:90px;}
+.apply-btn{padding:0 10px;font-size:12px;}
+.table-striped tbody > tr > th, .table-striped tbody > tr > td{padding:10px 5px;}
+.color-red{color:red;}
+.color-green{color:#8ac03c;}
+.color-yellow{color:yellow;}
+.btn-offer,.div-margin-top{margin-top:30px !important;}
+.form-horizontal .form-group{margin:0;}
+.radio label, .checkbox label{padding-left:10px;}
+.hr-double{padding:1.5;}
+.h1-big{font-size:33px;}
+.section-bottom-100{padding-bottom:100px;}
+.inputfile{width:0.1px;height:0.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1;}
+.inputfile + label{font-size:1.25em;font-weight:700;color:white;background-color:black;display:inline-block;}
+.inputfile:focus + label,
+.inputfile + label:hover{background-color:red;}
+.inputfile + label{cursor:pointer;}
+.post-description{margin-top:40px;}
+.post-description p,.post-description span,.post-description b,.post-description ul,.post-description li ,.post-description ol,.post-description table,.post-description table tr,.post-description table tr td{font-family:inherit !important;color:#404142 !important;margin-top:0 !important;margin-bottom:0 !important;font-style:normal !important;background-color:#fff!important;}
+.post-description div{padding:0 !important;color:#404142 !important;}
+.inputfile:focus + label{outline:1px dotted #000;outline:-webkit-focus-ring-color auto 5px;}
+.btn-block{margin-top:20px;}
+.progress-bar-circle canvas{height:130px!important;width:130px !important;}
+.font-white{color:#ffffff !important;}
+.col-resume{margin-bottom:10px !important;min-height:55px;}
+.member-block-type-3 .member-block-body{min-height:250px;}
+.btn-short-desc{border:none;background:transparent;text-transform:uppercase;font-size:13px;}
+.text-without-margin{margin-top:0 !important;margin-bottom:0 !important;}
+.text-margin-10{margin-bottom:5px !important;}
+.section-add-50{padding-top:0;padding-bottom:70px;}
+.section-first-child .offset-top-50:first-child{margin-top:0;}
+.offset-lg-top-80{margin-top:80px;}
+.margin-bottom-50{margin-bottom:50px !important;}
+footer .shell .reveal-block .reveal-inline-block .list li{text-align:left;transition:.5s;}
+footer .shell .reveal-block .reveal-inline-block .list li a:hover{color:#fff !important;transition:.5s;text-decoration:none;}
+.text-black{color:#404142;}
+.margin-top-left-30{margin-top:30px;margin-left:30px;}
+#bg-animation{position:absolute;top:0;left:0;right:0;width:100%;bottom:0;height:100%;}
+.background-size-cover{background-size:cover;}
+.resume-box .btn-short-desc h6,.resume-box .btn-short-desc{transition:.3s;}
+.resume-box .btn-short-desc h6:hover,.resume-box .btn-short-desc:hover{color:#8ac03c;transition:.3s;}
+.img-404{margin:0 -75px !important;}
+.section-404{bottom:0;}
+.swiper-slide-caption .btn-lg{min-width:270px;}
+.progress-bar-circle span{font-size:30px !important;}
+.paragraph-text{white-space:pre-wrap;}
+.post-media{height:245px;overflow:hidden;}
+.icon-width span{min-width:30px;}
+.icon-width .unit-body{padding-left:10px !important;}
+@media (min-width:1200px){}
+@media (min-width:980px) and (max-width:1199px){.background-size-cover{background-size:contain !important;background-repeat: no-repeat;height:auto;}}
+@media (min-width:768px) and (max-width:979px){.background-size-cover{background-size:contain !important;background-repeat: no-repeat;height:auto;}}
+@media (max-width:767px){footer .shell .reveal-block .reveal-inline-block .list li{text-align:left;}
+.background-size-cover{background-size:contain !important;background-repeat: no-repeat;height:auto;}
+.page-footer{padding-top:15px !important;}
+.page-footer .footer-brand,.page-footer .pull-left,.page-footer .pull-right{float:none !important;}
+.page-footer .list-inline{margin-top:15px!important;margin-bottom:4px!important;}
+}
+@media (min-width:568px) and (max-width:737px){.background-size-cover{background-size:contain !important;background-repeat: no-repeat;height:auto;}}
+@media (min-width:375px) and (max-width:567px){.background-size-cover{background-size:contain !important;background-repeat: no-repeat;height:auto;}}

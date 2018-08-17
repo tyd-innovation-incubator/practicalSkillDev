@@ -1,7 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+	<div class="context-dark">
+		<section class="breadcrumb-modern rd-parallax bg-gray-darkest">
+			<div data-speed="0.2" data-type="media" data-url="http://www.powerjob.in/images/background-02-1920x870.jpg" class="rd-parallax-layer"></div>
+			<div data-speed="0" data-type="html" class="rd-parallax-layer">
+				<div class="bg-overlay-gray-darkest">
+					<div class="shell section-top-98 section-bottom-34 section-md-bottom-66 section-md-98 section-lg-top-155 section-lg-bottom-66">
+						<div class="text-extra-big text-bold veil reveal-md-block">Password Reset</div>
+						<ul class="list-inline list-inline-dashed p offset-top-0 offset-lg-top-20">
+							<li><a href="index.html">Viewer</a></li>
+							<li>Password Reset </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+<div class="container" style="margin-top:30px; margin-bottom:30px;">
+
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\personal_details;
+use App\Model\userpersonal_details;
 
 class personalDataController extends Controller
 {

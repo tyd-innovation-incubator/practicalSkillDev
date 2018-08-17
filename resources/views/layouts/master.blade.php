@@ -31,7 +31,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Brand</a>
+            <a class="navbar-brand" href="/">PRASDEL</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -152,7 +152,7 @@
 
     <!-- Scripts -->
     <script type="text/javascript">
-       $('#date_of_birth').date_of_birth({ 
+       $('#date_of_birth').date_of_birth({
            autoclose: true,
            format: 'dd-mm-yyyy'
         });

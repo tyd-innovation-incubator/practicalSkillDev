@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\PersonalDetail;
+use App\Model\user\PersonalDetail;
 use Illuminate\Http\Request;
 use Auth;
 
@@ -54,7 +54,6 @@ class PersonalDetailsController extends Controller
            'district_of_birth' => 'required',
            'date_of_birth' => 'required',
            'marital_status' => 'required',
-           'user_id'=>'required'
        ]);
 
        PersonalDetail::create([
