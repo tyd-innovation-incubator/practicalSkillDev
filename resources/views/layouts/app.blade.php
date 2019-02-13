@@ -11,112 +11,83 @@
     <title>{{ config('app.name', 'PRASDEL') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    		<!-- Ionicons -->
+
+        <link href="{{ asset('plugins/css/plugins.css')}}" rel="stylesheet">
+
+    		<link href="{{ asset('fonts/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+    		<!-- Owl Carousel -->
+    		<link href="css/owl.carousel.css" rel="stylesheet">
+    		<link href="css/owl.theme.default.css" rel="stylesheet">
+    		<!-- Animate.css -->
+    		<link href="{{ asset('css/animate.min.css')}}" rel="stylesheet">
+    		<!--Magnific Popup -->
+    		<link href="{{ asset('css/magnific-popup.css')}}" rel="stylesheet">
+    		<!--Tagsinput CSS -->
+    		<link href="{{ asset('css/tagsinput.css')}}" rel="stylesheet">
+    		<!-- Style.css -->
+    		<link href="{{ asset('css/newstyle.css')}}" rel="stylesheet">
+
+    <link href="{{ asset('css/bio.css') }}" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
     <link href="{{ asset('css/materialdesignicons.min.css') }}" rel="stylesheet">
 
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
-    <link href="{{ asset('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/sweetalert.css') }}" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="{{ asset('/css/admin/bower_components/font-awesome/css/font-awesome.min.css')}}">
+
+    <link rel="stylesheet" href="{{ asset('/css/admin/bower_components/bootstrap/dist/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{ asset('/css/admin/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
+
+    @section('headSection')
+
+      @show
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="{{ asset('js/bio.js') }}"></script>
+
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <style media="screen">
   .dashboard li{
     display:block;
   },
   .panel-title{
-    
+
   }
 </style>
 
+<script>
+$(document).ready(
+
+    function iniciar(){
+    $('.follow').on("click", function(){
+        $('.follow').css('background-color','#34CF7A');
+        $('.follow').html('<div class="icon-ok"></div> Following');
+    });
+    }
+
+);
+</script>
+
 </head>
 <body>
-  <div class="page text-center">
-    <header class="page-head slider-menu-position">
-
-        <div class="rd-navbar-wrap">
-          <nav data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" class="rd-navbar container rd-navbar-floated rd-navbar-dark rd-navbar-dark-transparent" data-lg-auto-height="true" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
-            <div class="rd-navbar-inner">
-              <div class="rd-navbar-panel">
-                <button data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
-                <button data-rd-navbar-toggle=".rd-navbar, .rd-navbar-right-buttons" class="rd-navbar-right-buttons-toggle"><span></span></button>
-                <div class="rd-navbar-brand"><a href="index.html"><img src='images/logo.png' class="img-responsive" alt=''/></a></div>
-              </div>
-              <div class="rd-navbar-menu-wrap">
-                <div class="rd-navbar-nav-wrap">
-                  <div class="rd-navbar-mobile-scroll">
-                    <div class="rd-navbar-mobile-brand"><a href="index.html"><img width='218' height='35' src='images/logo.png' alt=''/></a></div>
-                    @if (Auth::guest())
-                    <ul class="rd-navbar-nav">
-                    										<li class="active"><a href="/"><span>Home</span></a></li>
-                    										<li class=""><a href="/vacanties"><span>Vacanties</span></a></li>
-                                        <li class=""><a href="/posts"><span>Skills/Tips</span></a></li>
-                    										<li class=""><a href="/company/login"><span>Employers</span></a></li>
-                                        <li><a href="{{ route('login') }}">JOB Seeker</a></li>
-                    									</ul>
-
-                    @else
-                    <ul class="rd-navbar-nav">
-                                        <li class="active"><a href="/"><span>Home</span></a></li>
-                                        <li class=""><a href="/vacanties"><span>Vacanties</span></a></li>
-                                        <li class=""><a href="/posts"><span>Skills/Tips</span></a></li>
-                                        <li class=""><a href="/company/login"><span>Employers</span></a></li>
-                                        <li class="dropdown"  style="margin-left:30px;">
-                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories<span class="caret"></span></a>
-                                          <ul class="dropdown-menu">
-                                              <li class="text-primary"><a href="/trainings/all">All</a></li>
-                                              <li class="text-primary"><a href="jobs/employment/freelance.html">Freelance</a></li>
-                                              <li class="text-primary"><a href="jobs/employment/full-time.html">Full Time</a></li>
-                                              <li class="text-primary"><a href="jobs/employment/internship.html">Internship</a></li>
-                                              <li class="text-primary"><a href="jobs/employment/part-time.html">Part Time</a></li>
-                                              <li class="text-primary"><a href="jobs/employment/temporary.html">Temporary</a></li>
-
-                                          </ul>
-                                        </li>
 
 
-                                        <li><a href="/dashboard">Dashboard</a></li>
-                                          <li class="dropdown">
-                                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                                  {{ Auth::user()->name }} <span class="caret"></span>
-                                              </a>
 
-                                              <ul class="dropdown-menu" role="menu">
-                                                  <li>
-                                                      <a href="{{ route('logout') }}"
-                                                          onclick="event.preventDefault();
-                                                                   document.getElementById('logout-form').submit();">
-                                                          Logout
-                                                      </a>
+    @include('includes.components.header')
 
-                                                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                                          {{ csrf_field() }}
-                                                      </form>
-                                                   </li>
-                                              </ul>
-                                          </li>
-                                      </ul>
-
-
-                    <ul class="nav navbar-nav navbar-right">
-
-
-                    @endif
-                  </div>
-                </div>
-
-
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
 
 
       @yield('content')
 
 </div>
-
+<!--
 <footer class="section-relative section-top-66 section-bottom-34 page-footer bg-gray-darkest">
     <div class="shell">
       <div class="range range-sm-center text-md-left">
@@ -228,14 +199,48 @@
       </div>
 
   </footer>
-
-
+-->
+@include('includes.components.footer')
     <!-- Scripts -->
+    @section('footerSection')
+
+      @show
+      <!-- Scripts -->
+      <!-- jQuery -->
+      <script src="{{ asset('js/jquery-3.1.1.min.js')}}"></script>
+      <!-- Bootstrap -->
+      <script src="{{ asset('js/bootstrap.min.js')}}"></script>
+      <!-- google maps -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAy-PboZ3O_A25CcJ9eoiSrKokTnWyAmt8"></script>
+      <!-- Owl Carousel -->
+      <script src="{{ asset('js/owl.carousel.min.js')}}"></script>
+      <!-- Wow.js -->
+      <script src="{{ asset('js/wow.min.js')}}"></script>
+      <!-- Typehead.js -->
+      <script src="{{ asset('js/typehead.js')}}"></script>
+      <!-- Tagsinput.js -->
+      <script src="{{ asset('js/tagsinput.js')}}"></script>
+      <!-- Bootstrap Select -->
+      <script src="{{ asset('js/bootstrap-select.js')}}"></script>
+      <!-- Waypoints -->
+      <script src="{{ asset('js/jquery.waypoints.min.js')}}"></script>
+      <!-- CountTo -->
+      <script src="{{ asset('js/jquery.countTo.js')}}"></script>
+      <!-- Isotope -->
+      <script src="{{ asset('js/isotope.pkgd.min.js')}}"></script>
+      <script src="{{ asset('js/imagesloaded.pkgd.min.js')}}"></script>
+      <!-- Magnific-Popup -->
+      <script src="{{ asset('js/jquery.magnific-popup.js')}}"></script>
+      <!-- Scripts.js -->
+      <script src="{{ asset('js/scripts.js')}}"></script>
+
+
     <script src="{{ asset('js/scripts.min.js')}}"></script>
   <script src="{{asset('js/main.js')}}"></script>
   <!--<script src="http://www.powerjob.in/js/toastr.min.js"></script>-->
   <script src="{{asset('js/sweetalert.min.js')}}"></script>
       <script>function subcategory(a){$.ajax({type:"GET",url:"http://www.powerjob.in/company/posts/category/"+a,success:function(a){$("#get_subcategory").html(a),$("#get_subcategory").
     <script src="{{ asset('js/app.js') }}"></script>
+
 </body>
 </html>

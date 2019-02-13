@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Model\user\post;
+use App\Model\user\Training;
 
 use Illuminate\Http\Request;
 
@@ -23,7 +25,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+      $posts = post::where('status',1)->paginate(3);
+    return view('home',compact('posts'));
     }
-    
+
 }

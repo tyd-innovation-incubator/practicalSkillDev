@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddUsernameFieldToUsersTable extends Migration
+class CreateCountriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class AddUsernameFieldToUsersTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-          $table->string('username');
-
+        //
+        Schema::create('countries', function(Blueprint $table)
+        {
+            $table->smallInteger('id', true);
+            $table->string('name', 191);
+            $table->dateTime('created_at')->nullable()->useCurrent();
+            $table->string('code', 2);
         });
     }
 
@@ -26,9 +30,7 @@ class AddUsernameFieldToUsersTable extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-          $table->dropColumn('username');
+        //
 
-        });
     }
 }

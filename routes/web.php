@@ -19,11 +19,18 @@ Auth::routes();
 
 //user routes
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/apply', 'HomeController@apply')->name('apply');
+
 Route::get('/post/tag/{tag}', 'User\HomeController@tag')->name('tag');
 Route::get('/post/category/{category}', 'User\HomeController@category')->name('category');
 
+Route::resource('/intro','User\IntroController');
+
+Route::get('/contact', function () {
+    return view('user.contact');
+});
 Route::get('/dashboard', function () {
-    return view('pages.user.dashboard');
+    return view('user.dashboard');
 });
 Route::resource('/personal_details', 'PersonalDetailsController' );
 
@@ -59,19 +66,38 @@ Route::group(['namespace'=>'Admin'],function(){
   Route::post('admin-login','Auth\LoginController@login');
 });
 
-
+Route::resource('/Traininglist','User\TrainingController');
 
 
 Route::get('/contact_detail',function(){
   return view('pages.contactDetail');
 });
-Route::get('/vacanties', function(){
-  return view('pages.vacanties');
-});
 
 Route::get('/company/login',function(){
   return view('pages.company.login');
 });
-Route::get('/trainings/all',function(){
-  return view('pages.trainings.all');
+
+
+Route::get('/about',function(){
+  return view('pages.about');
 });
+Route::get('/companies-list',function(){
+  return view('user.browserCompany');
+});
+Route::get('/postresume',function(){
+  return view('user.postresume');
+});
+Route::get('/postjob',function(){
+  return view('user.postjob');
+});
+Route::get('/EmployerDashboard',function(){
+  return view('user.EmploymentDashboard');
+});
+Route::get('/Help',function(){
+  return view('user.Help');
+});
+Route::get('/pricingplan',function(){
+  return view('user.pricingplan');
+});
+
+

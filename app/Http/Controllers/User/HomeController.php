@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers\User;
 use App\Model\user\post;
+use App\Model\user\Training;
 use App\Model\user\tag;
+use App\Model\user\Apply;
+
 use App\Model\user\category;
 
 use Illuminate\Http\Request;
@@ -17,6 +20,11 @@ class HomeController extends Controller
     return view('user.skills',compact('posts'));
     }
 
+    public function training()
+    {
+
+    }
+
     public function tag(tag $tag){
            $posts = $tag->posts();
            return view('user.skills',compact('posts'));
@@ -27,4 +35,10 @@ class HomeController extends Controller
        $posts = $category->posts();
        return view('user.skills',compact('posts'));
     }
+
+    public function apply(apply $apply){
+      return redirect::to()->withInput();
+      return all();
+    }
+      
 }

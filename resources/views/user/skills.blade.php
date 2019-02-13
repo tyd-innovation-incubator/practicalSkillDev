@@ -2,76 +2,117 @@
 
 @section('content')
 
+<!-- Breadcrumb Bar -->
+<div class="section breadcrumb-bar solid-blue-bg" style="background-color:green;">
+  <div class="inner">
+    <div class="container">
+      <p class="breadcrumb-menu">
+        <a href="index-2.html"><i class="ion-ios-home"></i></a>
+        <i class="ion-ios-arrow-right arrow-right"></i>
+        <a href="#0">Blog</a>
+        <i class="ion-ios-arrow-right arrow-right"></i>
+        <a href="#0">Blog List</a>
+      </p> <!-- end .breabdcrumb-menu -->
+      <h2 class="breadcrumb-title">Blog List</h2>
+    </div> <!-- end .container -->
+  </div> <!-- end .inner -->
+</div> <!-- end .section -->
 
-<div class="context-dark" >
-		<section class="breadcrumb-modern rd-parallax bg-gray-darkest">
-			<div data-speed="0.2" data-type="media" data-url="http://www.powerjob.in/images/background-02-1920x870.jpg" class="rd-parallax-layer"></div>
-			<div data-speed="0" data-type="html" class="rd-parallax-layer">
-				<div class="bg-overlay-gray-darkest">
-					<div class="shell section-top-98 section-bottom-34 section-md-bottom-66 section-md-98 section-lg-top-155 section-lg-bottom-66">
-						<div class="text-extra-big text-bold veil reveal-md-block">Impontant Skills</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-<div class="container">
+<!-- Blog Section -->
+<div class="section blog-list-section">
+  <div class="inner">
+    <div class="container">
 
-<!--pactical-introduction-->
-  <div class="practical-introduction" style="margin-top:30px;" >
-    <div class="row" style="margin-bottom:30px; margin-top:30px;">
-			@foreach($posts as $post)
-			<div class="col-md-4">
-				<div class="flex-mid-container direction--column margin-top-bottom--0 max-width--1024">
-					<ul class="blog-roll__flex-container">
-						<li class="blog-roll__article">
-							<article class="blog-roll__article__inner box-shadow--heavy"   style="box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px 0 rgba(0,0,0,.2)!important; margin-top:30px; padding:0px;">
-								<div class="blog-roll__article__image-container">
-									<img class="blog-roll__image" src="https://www.brightermonday.co.tz/blog/wp-content/uploads/sites/14/2018/06/control-career-300x158.png" alt="" width="300" height="150" style="object-fit: cover; height:100%; width:100%;">
-								</div>
-								<div class="blog-roll__article__text-container justify--flex-start align--center">
-									<div class="flex-wrapper-column">
-										<div class="blog-roll__date">
-			{{$post->created_at->diffForHumans()}}
-			</div>
-			<div class="blog-roll__title">
-			<a href="{{ route('post',$post->slug)}}" target="" class="blog-roll__title-link">
-			{{$post->Title}}
-			</a>
-			</div>
-			</div>
-			<div class="blog-roll__read-more">
-				<a href="{{ route('post',$post->slug)}}" target="" class="blog-roll__read-more-link">
-			Read more
-			</a>
-			</div>
-			</div>
-			</article>
-			</li>
-			</ul>
-			</div>
-			</div>
+      <div class="blog-posts-wrapper flex space-between no-wrap">
+        <div class="blog-left-side">
+          @foreach($posts as $post)
 
+          <div class="blog-list flex no-wrap">
+            <div class="left-side">
+              <img src="/image/blog-post-img-xs01.jpg" alt="blog-post-featured-img" class="img-responsive">
+            </div> <!-- end .left-side -->
+            <div class="right-side">
+              <h2 class="dark">{{$post->Title}}</h2>
+              <div class="news-meta flex no-column">
+                <h6 class="publish-date">{{$post->created_at->diffForHumans()}}</h6>
+              </div> <!-- end .news-meta -->
+              <p>{{$post->subtitle}}</p>
+            <a href="{{ route('post',$post->slug)}}"><button type="button" class="button">Read More</button></a>
+            </div> <!-- end .right-side -->
+          </div> <!-- end .blog-list -->
 @endforeach
 
-  </div>
-  </div>
-	<ul class="pager">
-		<li class="next">
-			{{$posts->links()}}
-		</li>
-	</ul>
+          <div class="jobpress-custom-pager list-unstyled flex space-between no-column items-center">
+            <a href="#0" class="button"><i class="ion-ios-arrow-left"></i>Prev</a>
+            <ul class="list-unstyled flex no-column items-center">
+              <li class="next">
+          			{{$posts->links()}}
+          		</li>
+            </ul>
+            <a href="#0" class="button">Next<i class="ion-ios-arrow-right"></i></a>
+          </div> <!-- end .jobpress-custom-pager -->
 
+        </div> <!-- end .blog-list-wrapper -->
 
+        <div class="blog-sidebar">
 
+          <div class="search-widget blog-widget">
+            <h6>Search this site</h6>
+                    <div class="input-group search-form">
+                        <input type="text" class="form-control"  placeholder="Enter your keyword" >
+                        <button type="submit"><span><i class="ion-ios-search"></i></span></button>
+                    </div>
+          </div> <!-- end .search-widget -->
 
-<div class="row" style="margin-top:80px; background-color:whitesmoke;">
+          <div class="recent-posts-widget blog-widget">
+            <h6>Recent Posts</h6>
+@foreach($posts as $post)
+            <div class="recent-post flex items-center no-column no-wrap">
+              <img src="/image/recent-post01.jpg" alt="recent-post-img" class="img-responsive">
+              <h4><a href="#0">{{$post->Title}}</a></h4>
+            </div> <!-- end .recent-post -->
+@endforeach
+          </div> <!-- end .recent-posts-widget -->
 
-  </div>
+          <div class="blog-category-widget blog-widget">
+            <h6>Categories</h6>
+            <ul class="blog-categories list-unstyled">
+              @foreach($post->categories as $category)
+              <li><a href="{{ route('category',$category)}}">{{$category->name}}</a></li>
 
+              @endforeach
+            </ul>
+          </div> <!-- end .blog-category-widget -->
 
-</div>
+          <div class="blog-tags-widget blog-widget">
+            <h6>Tags</h6>
+            <ul class="blog-tags flex no-column list-unstyled">
+              @foreach($post->tags as $tag)
+              <li><a href="{{ route('tag',$tag)}}" class="button button-xs grey">   {{$tag->name}}
+</a></li>
 
+              @endforeach
+            </ul>
+          </div> <!-- end .blog-tags-widget -->
 
-</div><!--end of container-->
+          <div class="blog-archives-widget blog-widget">
+            <h6>Arhives</h6>
+            <ul class="blog-archives list-unstyled">
+              <li><a href="#">October 2016<span>28 posts</span></a></li>
+              <li><a href="#">September 2016<span>35 posts</span></a></li>
+              <li><a href="#">August 2016<span>19 posts</span></a></li>
+              <li><a href="#">July 2016<span>23 posts</span></a></li>
+              <li><a href="#">June 2016<span>29 posts</span></a></li>
+              <li><a href="#">May 2016<span>16 posts</span></a></li>
+              <li><a href="#">April<span>14 posts</span></a></li>
+            </ul>
+          </div> <!-- end .blog-archives-widget -->
+
+        </div> <!-- end .blog-sidebar -->
+      </div> <!-- end .blog-posts-wrapper -->
+
+    </div> <!-- end .container -->
+  </div> <!-- end .inner -->
+</div> <!-- end .section -->
+
 @endsection

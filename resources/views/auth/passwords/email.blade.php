@@ -7,11 +7,6 @@
 			<div data-speed="0" data-type="html" class="rd-parallax-layer">
 				<div class="bg-overlay-gray-darkest">
 					<div class="shell section-top-98 section-bottom-34 section-md-bottom-66 section-md-98 section-lg-top-155 section-lg-bottom-66">
-						<div class="text-extra-big text-bold veil reveal-md-block">Password Reset</div>
-						<ul class="list-inline list-inline-dashed p offset-top-0 offset-lg-top-20">
-							<li><a href="index.html">Viewer</a></li>
-							<li>Password Reset </li>
-						</ul>
 					</div>
 				</div>
 			</div>
@@ -50,7 +45,7 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-success" style="margin-top:10px; margin-left:40px;">
                                     Send Password Reset Link
                                 </button>
                             </div>

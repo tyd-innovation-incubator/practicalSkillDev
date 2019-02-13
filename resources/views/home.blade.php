@@ -3,452 +3,332 @@
 
 @section('content')
 
-<section id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators" style="margin-top:10px;">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-              <img src="image/DAR ES SALAM - GettyImages-488050656.jpg" alt="..." style="width:100%; height:480px;">
-                <div class="carousel-caption">
-                  <div class="swiper-slide-caption">
-                    <div class="shell">
-                      <div class="range range-lg-center">
-                        <div class="cell-lg-12">
-                          <h1><span data-caption-animate="fadeInUp" data-caption-delay="900" class="big text-uppercase">WELCOME PRASDEL</span></h1>
-                        </div>
-                        <div class="cell-lg-10 offset-top-30">
-                          <h4 >Get Connection to Oppotunities</h4>
-                          <div class="group group-xl offset-top-20 offset-xs-top-50">
-                            <a href="/vacanties" data-caption-animate="fadeInUp" data-caption-delay="1500" class="btn btn-primary btn-lg btn-anis-effect">
-                              <span class="btn-text">Get your Chance</span>
-                            </a>
-                            <a href="/login" data-custom-scroll-to="home-section-welcome" data-caption-animate="fadeInUp" data-caption-delay="1500" class="btn btn-default btn-lg btn-anis-effect">
-                              <span class="btn-text">Join PRASDEL</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+		<!-- Hero Section -->
+		<div class="section hero-section transparent" style="background-image: url('image/DAR ES SALAM - GettyImages-488050656.jpg');">
+			<div class="inner">
+				<div class="container">
+          <div class="banner-caption">
+              <div class="col-md-12 col-sm-12 banner-text">
+                <h1>Browse Your Training</h1>
+                <form class="form-horizontal">
+                  <div class="col-md-4 no-padd">
+                     <div class="input-group">
+                       <input type="text" class="form-control right-bor" placeholder="Skills, Designations, Companies">
+                     </div>
                   </div>
-                </div>
-            </div>
-            <div class="item">
-              <img src="image/DAR ES SALAM - GettyImages-488050656.jpg" style="width:100%; height:480px;">
-                <div class="carousel-caption">
-                  <div class="swiper-slide-caption">
-                    <div class="shell">
-                      <div class="range range-lg-center">
-                        <div class="cell-lg-12">
-                          <h1><span data-caption-animate="fadeInUp" data-caption-delay="900" class="big text-uppercase">EMPLOYMENT BLOG</span></h1>
-                        </div>
-                        <div class="cell-lg-10 offset-top-30">
-                          <h4 data-caption-animate="fadeInDown" data-caption-delay="1500" class="hidden reveal-sm-block text-muted text-light">We have recently launched our employment blog where we review top rated vacancies and give useful advice to our readers.</h4>
-                          <div class="group group-xl offset-top-20 offset-xs-top-50">
-                            <a href="/vacanties" data-caption-animate="fadeInUp" data-caption-delay="1500" class="btn btn-primary btn-lg btn-anis-effect">
-                              <span class="btn-text">Get your Chance</span>
-                            </a>
-                            <a href="/login" data-custom-scroll-to="home-section-welcome" data-caption-animate="fadeInUp" data-caption-delay="1500" class="btn btn-default btn-lg btn-anis-effect">
-                              <span class="btn-text">Join PRASDEL</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="col-md-4 no-padd">
+                     <div class="input-group">
+                       <input type="text" class="form-control right-bor" placeholder="Search By Location..">
+                     </div>
                   </div>
-                </div>
 
-            </div>
-            <div class="item">
-              <img src="image/DAR ES SALAM - GettyImages-488050656.jpg" style="width:100%; height:480px;">
-                <div class="carousel-caption">
-                  <div class="swiper-slide-caption">
-                    <div class="shell">
-                      <div class="range range-lg-center">
-                        <div class="cell-lg-12">
-                          <h1><span data-caption-animate="fadeInUp" data-caption-delay="900" class="big text-uppercase">EMPLOYMENT BLOG</span></h1>
-                        </div>
-                        <div class="cell-lg-10 offset-top-30">
-                          <h4 data-caption-animate="fadeInDown" data-caption-delay="1500" class="hidden reveal-sm-block text-muted text-light">We have recently launched our employment blog where we review top rated vacancies and give useful advice to our readers.</h4>
-                          <div class="group group-xl offset-top-20 offset-xs-top-50">
-                            <a href="/vacanties" data-caption-animate="fadeInUp" data-caption-delay="1500" class="btn btn-primary btn-lg btn-anis-effect">
-                              <span class="btn-text">Get your Chance</span>
-                            </a>
-                            <a href="/login" data-custom-scroll-to="home-section-welcome" data-caption-animate="fadeInUp" data-caption-delay="1500" class="btn btn-default btn-lg btn-anis-effect">
-                              <span class="btn-text">Join PRASDEL</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+
+
+                  <div class="col-md-3 no-padd">
+                    <div class="input-group">
+                      <button type="submit" class="btn btn-primary">Search Training</button>
                     </div>
                   </div>
+                </form>
+                <div class="video-box">
+                  <a href="#" class="btn btn-video"><i class="fa fa-play" aria-hidden="true"></i></a>
                 </div>
+              </div>
+          </div> <!-- end .job-search-form -->
+				</div> <!-- end .container -->
+				<div class="features-bar">
+					<div class="container">
+						<div class="features-bar-inner flex space-between">
+							<div class="features-box self-center">
+								<h3>Leading the industry</h3>
+								<a href="/about">About us<i class="ion-ios-arrow-thin-right"></i></a>
+							</div> <!-- end .feature-box -->
+							<div class="features-box-icon flex no-wrap">
+								<img src="image/feature-icon01.png" alt="cup-icon" class="img-responsive self-center">
+								<div class="content self-center">
+									<h3>High average salary</h3>
+									<a href="#0">Learn more<i class="ion-ios-arrow-thin-right"></i></a>
+								</div> <!-- end .content -->
+							</div> <!-- end .feature-box-icon -->
+							<div class="features-box-icon flex no-wrap">
+								<img src="image/feature-icon02.png" alt="cup-icon" class="img-responsive self-center">
+								<div class="content self-center">
+									<h3>2,500,000+ candidates</h3>
+									<a href="#0">Our community<i class="ion-ios-arrow-thin-right"></i></a>
+								</div> <!-- end .content -->
+							</div> <!-- end .feature-box-icon -->
+							<div class="user-profile-icon self-center">
+								<img src="image/profile-icon01.png" alt="profile-icon" class="img-responsive self-center">
+							</div> <!-- end .profile-icon -->
+						</div> <!-- end .features-bar-inner -->
+					</div> <!-- end .container -->
+				</div> <!-- end .features-bar -->
+			</div> <!-- end .inner -->
+		</div> <!-- end .section -->
+
+    <!-- Work Process Counter Section Start -->
+    <section class="wp-process" style="background:whitesmoke">
+      <div class="container">
+        <div class="row">
+          <div class="main-heading">
+            <p>How We Work</p>
+            <h2>PRACTICAL SKILL DEVELOPMENT LINK (<span>PRASDEL</span>)</h2>
+          </div>
+        </div>
+        <!--/row-->
+        <div class="col-md-4 col-sm-6">
+          <div class="work-process">
+            <div class="work-process-icon">
+              <span class="icon-search"></span>
             </div>
+            <div class="work-process-caption">
+              <h4>Search Job</h4>
+              <p>Aliquam vestibulum cursus felis. In iaculis iaculis sapien ac condimentum. Vestibulum congue posuere lacus</p>
+            </div>
+          </div>
         </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
+        <div class="col-md-4 col-sm-6">
+          <div class="work-process">
+            <div class="work-process-icon">
+              <span class="icon-mobile"></span>
+            </div>
+            <div class="work-process-caption">
+              <h4>Find Job</h4>
+              <p>Aliquam vestibulum cursus felis. In iaculis iaculis sapien ac condimentum. Vestibulum congue posuere lacus</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="work-process">
+            <div class="work-process-icon">
+              <span class="icon-profile-male"></span>
+            </div>
+            <div class="work-process-caption">
+              <h4>Hire Employee</h4>
+              <p>Aliquam vestibulum cursus felis. In iaculis iaculis sapien ac condimentum. Vestibulum congue posuere lacus</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="work-process">
+            <div class="work-process-icon">
+              <span class="icon-layers"></span>
+            </div>
+            <div class="work-process-caption">
+              <h4>Start Work</h4>
+              <p>Aliquam vestibulum cursus felis. In iaculis iaculis sapien ac condimentum. Vestibulum congue posuere lacus</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="work-process">
+            <div class="work-process-icon">
+							<span class="icon-wallet"></span>
+          </div>
+            <div class="work-process-caption">
+              <h4>Pay Money</h4>
+              <p>Aliquam vestibulum cursus felis. In iaculis iaculis sapien ac condimentum. Vestibulum congue posuere lacus</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="work-process">
+            <div class="work-process-icon">
+              <span class="icon-happy"></span>
+            </div>
+            <div class="work-process-caption">
+              <h4>Happy</h4>
+              <p>Aliquam vestibulum cursus felis. In iaculis iaculis sapien ac condimentum. Vestibulum congue posuere lacus</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
+    <div class="clearfix"></div>
+    <!-- Work Process Counter Section End -->
+		<!-- Latest Jobs Section -->
+		{{--<div class="section Latest-jobs-section">--}}
+			{{--<div class="inner">--}}
+				{{--<div class="container">--}}
+					{{--<div class="main-heading">--}}
+						{{--<h2>Latest <span>Trainings</span></h2>--}}
+					{{--</div>--}}
+					{{--<div class="section-top-content flex items-center">--}}
+						{{--<h1></h1>--}}
+						{{--<a href="/Traininglist">View all Trainings<i class="ion-ios-arrow-thin-right"></i></a>--}}
+					{{--</div> <!-- end .section-top-content -->--}}
 
-<section class="section-98 section-sm-110 bg-gray-light">
-<div class="shell">
-<h1>Why Practical Skill Development Link?</h1>
-<hr class="divider divider-sm bg-darkers">
-<div class="range range-xs-center text-md-left offset-top-50 offset-lg-top-66">
-  <div class="cell-sm-9 cell-md-4 cell-md-preffix-0">
-    <div class="unit unit-middle unit-spacing-xs unit-xs unit-xs-horizontal text-center text-xs-left">
-      <div class="unit-left"><i class="text-middle icon-sm text-primary fa fa-user-plus fa-2x" aria-hidden="true"></i></div>
-      <div class="unit-body">
-        <h5 class="text-uppercase text-bold">Remote and Flexible </h5>
-      </div>
-    </div>
-    <p class="offset-top-10 text-dark text-center text-xs-left">Every job seeker who comes here for job is verified and we give our best to provide the suitable jobs for every type of job seekers.</p>
-  </div>
-  <div class="cell-sm-9 cell-md-4 cell-md-preffix-0 offset-top-50 offset-md-top-0">
-    <div class="unit unit-middle unit-spacing-xs unit-xs unit-xs-horizontal text-center text-xs-left">
-      <div class="unit-left">
-        <i class="text-middle icon-sm text-primary fa fa-bar-chart fa-2x" aria-hidden="true"></i>
-      </div>
-      <div class="unit-body">
-        <h5 class="text-uppercase text-bold">Pay little Get more</h5>
-      </div>
-    </div>
-    <p class="offset-top-10 text-dark text-center text-xs-left">For the little payment of subscribed user will ensure to get all services</p>
-  </div>
-  <div class="cell-sm-9 cell-md-4 cell-md-preffix-0 offset-top-50 offset-md-top-0">
-    <div class="unit unit-middle unit-spacing-xs unit-xs unit-xs-horizontal text-center text-xs-left">
-      <div class="unit-left"><i class="text-middle icon-sm text-primary fa fa-newspaper-o fa-2x" aria-hidden="true"></i></div>
-      <div class="unit-body">
-        <h5 class="text-uppercase text-bold">Soft skills for more work knowledge</h5>
-      </div>
-    </div>
-    <p class="offset-top-10 text-dark text-center text-xs-left">We provide employment blog so that employees can write their review about companies and share their experience with the company. They can also give advice to the job seekers.</p>
-  </div>
-</div>
-<div class="range range-xs-center text-md-left offset-top-50 offset-lg-top-66">
-  <div class="cell-sm-9 cell-md-4 cell-md-preffix-0">
-    <div class="unit unit-middle unit-spacing-xs unit-xs unit-xs-horizontal text-center text-xs-left">
-      <div class="unit-left"><i class="text-middle icon-sm text-primary fa fa-user-plus fa-2x" aria-hidden="true"></i></div>
-      <div class="unit-body">
-        <h5 class="text-uppercase text-bold">Verified employers</h5>
-      </div>
-    </div>
-    <p class="offset-top-10 text-dark text-center text-xs-left">Every job seeker who comes here for job is verified and we give our best to provide the suitable jobs for every type of job seekers.</p>
-  </div>
-  <div class="cell-sm-9 cell-md-4 cell-md-preffix-0 offset-top-50 offset-md-top-0">
-    <div class="unit unit-middle unit-spacing-xs unit-xs unit-xs-horizontal text-center text-xs-left">
-      <div class="unit-left">
-        <i class="text-middle icon-sm text-primary fa fa-bar-chart fa-2x" aria-hidden="true"></i>
-      </div>
-      <div class="unit-body">
-        <h5 class="text-uppercase text-bold">Availability of job vacanties</h5>
-      </div>
-    </div>
-    <p class="offset-top-10 text-dark text-center text-xs-left">We provide the most demanded vacancies for the job seekers in India.</p>
-  </div>
-  <div class="cell-sm-9 cell-md-4 cell-md-preffix-0 offset-top-50 offset-md-top-0">
-    <div class="unit unit-middle unit-spacing-xs unit-xs unit-xs-horizontal text-center text-xs-left">
-      <div class="unit-left"><i class="text-middle icon-sm text-primary fa fa-newspaper-o fa-2x" aria-hidden="true"></i></div>
-      <div class="unit-body">
-        <h5 class="text-uppercase text-bold">Excellent job search</h5>
-      </div>
-    </div>
-    <p class="offset-top-10 text-dark text-center text-xs-left">We provide employment blog so that employees can write their review about companies and share their experience with the company. They can also give advice to the job seekers.</p>
-  </div>
-</div>
-</div>
-</section>
+					{{--<div class="jobs-table">--}}
+						{{--<div class="table-header">--}}
+							{{--<div class="table-cells flex">--}}
+								{{--<div class="job-title-cell"><h6>Job title / Company name</h6></div>--}}
+								{{--<div class="job-type-cell"><h6>Type</h6></div>--}}
+								{{--<div class="location-cell"><h6>Location</h6></div>--}}
+								{{--<div class="expired-date-cell"><h6>Expired Date</h6></div>--}}
+								{{--<div class="salary-cell"><h6>Salary</h6></div>--}}
+							{{--</div> <!-- end .table-cells -->--}}
+						{{--</div> <!-- end .table-header -->--}}
+            {{--@foreach($training as $train)--}}
 
-<section class="section-98 section-sm-110">
-<div class="shell">
-<h1>Latest Jobs</h1>
-<hr class="divider divider-sm bg-darkers">
-<div class="table-responsive clearfix">
-  <table class="table table-striped">
-    <tr>
-      <th></th>
-      <th class="text-regular text-dark big">Date</th>
-      <th class="text-regular text-dark big">Company</th>
-      <th class="text-regular text-dark big">Post Title</th>
-      <th class="text-regular text-dark big">Post Category</th>
-      <th class="text-regular text-dark big">City</th>
-      <th class="text-regular text-dark big">Salary</th>
-      <th class="text-regular text-dark big">Employment</th>
-    </tr>
-    <tr>
-      <td>
+						{{--<div class="table-row">--}}
+							{{--<div class="table-cells flex no-wrap">--}}
+								{{--<div class="cell job-title-cell flex no-column no-wrap">--}}
+									{{--<div class="cell-mobile-label">--}}
+										{{--<h6>Company name</h6>--}}
+									{{--</div> <!-- end .cell-label -->--}}
+                  {{--<a href="{{route('Traininglist.show',$train->id)}}">--}}
+                  {{--{{$train->company_name}}--}}
+                  {{--</a>--}}
+										{{--<div class="content">--}}
+										{{--<h4><a href="job-details.html">{{$train->Title}}</a></h4>--}}
+										{{--<p class="small">{{$train->subtitle}}</p>--}}
+									{{--</div> <!-- end .content -->--}}
+								{{--</div> <!-- end .job-title-cell -->--}}
+								{{--<div class="cell job-type-cell flex no-column no-wrap">--}}
+									{{--<div class="cell-mobile-label">--}}
+										{{--<h6>Type</h6>--}}
+									{{--</div> <!-- end .cell-label -->--}}
+									{{--<button type="button" class="button full-time">{{$train->Employment_type}}</button>--}}
+								{{--</div>--}}
+								{{--<div class="cell location-cell flex no-column no-wrap">--}}
+									{{--<div class="cell-mobile-label">--}}
+										{{--<h6>Location</h6>--}}
+									{{--</div> <!-- end .cell-label -->--}}
+									{{--<p><span>{{$train->location}}</span></p>--}}
+								{{--</div>--}}
+								{{--<div class="cell expired-date-cell flex no-column no-wrap">--}}
+									{{--<div class="cell-mobile-label">--}}
+										{{--<h6>Posted on</h6>--}}
+									{{--</div> <!-- end .cell-label -->--}}
+									{{--<p><span>{{$train->created_at}}</span></p>--}}
+								{{--</div>--}}
+								{{--<div class="cell salary-cell flex no-column no-wrap">--}}
+									{{--<div class="cell-mobile-label">--}}
+										{{--<h6>Salary</h6>--}}
+									{{--</div> <!-- end .cell-label -->--}}
+									{{--<p><sup>$</sup>{{$train->salary}}<span>/hour</span></p>--}}
+								{{--</div>--}}
+							{{--</div> <!-- end .table-cells -->--}}
+						{{--</div> <!-- end .table-row -->--}}
+     {{--@endforeach--}}
+						{{--<div class="table-footer flex space-between items-center">--}}
+							{{--<div class="jobpress-custom-pager list-unstyled flex space-between no-column items-center">--}}
+								{{--<a href="#0" class="button"><i class="ion-ios-arrow-left"></i>Prev</a>--}}
+								{{--<ul class="list-unstyled flex no-column items-center">--}}
+									{{--<li><a href="#0">1</a></li>--}}
 
-        <i class="fa fa-inr text-primary" aria-hidden="true"></i>
-      </td>
-      <td>18-01-2018</td>
-      <td>
-        <a href="career/23-gajanand-irrigation-industries.html">
-          <img src="images/company/logo/368-GAJANAND%20LOGO.png" class="img-responsive img-circle" alt="company-logo" class="img-semi-transparent-inverse" style="height:35px;width:35px;">
-        </a>
-      </td>
-      <td class="text-bold text-primary p"><a href="jobs/accounts-assistant.html">Accounts Assistant</a></td>
-      <td>Business and Finance</td>
-      <td>Ahmedabad</td>
-      <td>5000-7500</td>
-      <td>Full Time</td>
-        </tr>
+								{{--</ul>--}}
+								{{--<a href="#0" class="button">Next<i class="ion-ios-arrow-right"></i></a>--}}
+							{{--</div> <!-- end .jobpress-custom-pager -->--}}
+						{{--</div>--}}
+					{{--</div> <!-- end .jobs-table -->--}}
+				{{--</div> <!-- end .container -->--}}
+			{{--</div> <!-- end .inner -->--}}
+		{{--</div> <!-- end .section -->--}}
 
-    <tr>
-      <td>
-        <i class="fa fa-line-chart text-primary" aria-hidden="true"></i>
-      </td>
-      <td>15-04-2017</td>
-      <td>
-        <a href="career/21-algo-fluid-systems-private-limted.html">
-          <img src="images/company/logo/589-Algo-Pumps.jpg" class="img-responsive img-circle" alt="company-logo" class="img-semi-transparent-inverse" style="height:35px;width:35px;">
-        </a>
-      </td>
-      <td class="text-bold text-primary p"><a href="jobs/marketing-executive.html">Marketing Executive</a></td>
-      <td>Sales and Marketing</td>
-      <td>Ahmedabad</td>
-      <td>25000 to 30000</td>
-      <td>Full Time</td>
-    </tr>
-    <tr>
-      <td>
-        <i class="fa fa-desktop text-primary" aria-hidden="true"></i>
-      </td>
-      <td>06-04-2017</td>
-      <td>
-        <a href="career/19-meeka-software-pvt.-ltd.html">
-          <img src="images/company/logo/327-meeka.jpg" class="img-responsive img-circle" alt="company-logo" class="img-semi-transparent-inverse" style="height:35px;width:35px;">
-        </a>
-      </td>
-      <td class="text-bold text-primary p"><a href="jobs/erp-implementater.html">Erp Implementater</a></td>
-      <td>IT Sector</td>
-      <td>Ahmedabad</td>
-      <td>15000 to 25000</td>
-      <td>Full Time</td>
-        </tr>
-    <tr>
-      <td>
+		<div class="section cta-section parallax text-center" style="background-image: url('image/background02.jpg');">
+			<div class="inner">
+				<div class="container">
+					<h2>Looking for a Training</h2>
+					<p class="large light">Join thousand of students and earn what you deserve</p>
+					<div class="cta-button">
+						<a href="/postresume" class="button">Get started now</a>
+					</div> <!-- end .cta-button -->
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</div> <!-- end .section -->
 
-        <i class="fa fa-desktop text-primary" aria-hidden="true"></i>
-      </td>
-      <td>06-04-2017</td>
-      <td>
-        <a href="career/19-meeka-software-pvt.-ltd.html">
-          <img src="images/company/logo/327-meeka.jpg" class="img-responsive img-circle" alt="company-logo" class="img-semi-transparent-inverse" style="height:35px;width:35px;">
-        </a>
-      </td>
-            <td class="text-bold text-primary p"><a href="jobs/asp.html">ASP.Net Developer</a></td>
-      <td>IT Sector</td>
-      <td>Ahmedabad</td>
-      <td>15000 to 22000</td>
-      <td>Part Time</td>
-    </tr>
+		<!-- Latest News Section -->
+		<div class="section Latest-news-section">
+			<div class="inner">
+				<div class="container">
+					<div class="main-heading">
+						<h2>Latest <span>News</span></h2>
+					</div>
+					<div class="section-top-content flex items-center">
+						<a href="/posts">View all news<i class="ion-ios-arrow-thin-right"></i></a>
+					</div> <!-- end .section-top-content -->
+					<div class="news-grid">
+						<div class="news-grid-row flex space-between">
+              @foreach($posts as $post)
+							<div class="news-item">
+								<img src="image/news-grid01.jpg" alt="news-thumbnail" class="img-responsive">
+								<div class="news-content">
+									<div class="news-meta flex no-column">
+										<h6 class="publish-date">{{$post->created_at}}</h6>
+									</div> <!-- end .news-meta -->
+									<h3 class="news-title">{{$post->Title}}</h3>
+									<p class="news-excerpt">{{$post->subtitle}}</p>
+									<a href="{{ route('post',$post->slug)}}" class="button">Read More</a>
+								</div> <!-- end .news-content -->
+							</div> <!-- end .news-item -->
+              @endforeach
+						</div>  <!-- end .news-grid-row -->
+					</div> <!-- end .news-grid -->
+				</div> <!-- end .container -->
+			</div> <!-- end .inner -->
+		</div> <!-- end .section -->
 
-    <tr>
-      <td>
-        <i class="fa fa-line-chart text-primary" aria-hidden="true"></i>
-      </td>
-      <td>05-04-2017</td>
-      <td>
-        <a href="career/17-meeka-machinery-pvt.-ltd.html">
-          <img src="images/company/logo/244-meeka-machinery.jpg" class="img-responsive img-circle" alt="company-logo" class="img-semi-transparent-inverse" style="height:35px;width:35px;">
-        </a>
-      </td>
-      <td class="text-bold text-primary p"><a href="jobs/sales-executive.html">Sales Executive</a></td>
-      <td>Sales and Marketing</td>
-      <td>Ahmedabad</td>
-      <td>25000 +</td>
-      <td>Full Time</td>
-    </tr>
-    <tr>
-      <td>
-        <i class="fa fa-line-chart text-primary" aria-hidden="true"></i>
-      </td>
-      <td>05-04-2017</td>
-      <td>
-        <a href="career/17-meeka-machinery-pvt.-ltd.html">
-          <img src="images/company/logo/244-meeka-machinery.jpg" class="img-responsive img-circle" alt="company-logo" class="img-semi-transparent-inverse" style="height:35px;width:35px;">
-        </a>
-      </td>
+		<div class="row" style="margin-bottom:30px;">
+			<div class="container">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+				 <h1>Clients & Partners</h1>
+										 <div id="Carousel" class="carousel slide">
 
-      <td class="text-bold text-primary p"><a href="jobs/sales-manager.html">Sales Manager</a></td>
+										 <ol class="carousel-indicators">
+												 <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+												 <li data-target="#Carousel" data-slide-to="1"></li>
+												 <li data-target="#Carousel" data-slide-to="2"></li>
+										 </ol>
 
-      <td>Sales and Marketing</td>
-      <td>Ahmedabad</td>
-      <td>50000 to 55000</td>
-      <td>Full Time</td>
-    </tr>
-    <tr>
-      <td>
-        <i class="fa fa-wrench text-primary" aria-hidden="true"></i>
-      </td>
-      <td>24-03-2017</td>
-      <td>
-        <a href="career/12-everest-instruments-pvt.-ltd.html">
-          <img src="images/company/logo/856-everest-instruments.jpg" class="img-responsive img-circle" alt="company-logo" class="img-semi-transparent-inverse" style="height:35px;width:35px;">
-        </a>
-      </td>
-      <td class="text-bold text-primary p"><a href="jobs/service-engineer.html">Service engineer</a></td>
-      <td>Manufacturing And Production</td>
-      <td>Maharashtra</td>
-      <td>12000</td>
-      <td>Full Time</td>
-    </tr>
-    <tr>
-      <td>
-        <i class="fa fa-line-chart text-primary" aria-hidden="true"></i>
-      </td>
-      <td>24-03-2017</td>
-      <td>
-        <a href="career/12-everest-instruments-pvt.-ltd.html">
-          <img src="images/company/logo/856-everest-instruments.jpg" class="img-responsive img-circle" alt="company-logo" class="img-semi-transparent-inverse" style="height:35px;width:35px;">
-        </a>
-      </td>
-      <td class="text-bold text-primary p"><a href="jobs/sales-manager.html">Sales Manager</a></td>
-      <td>Sales and Marketing</td>
-      <td>Ahmedabad</td>
-      <td>28000</td>
-      <td>Full Time</td>
-    </tr>
-    <tr>
-      <td>
-        <i class="fa fa-video-camera text-primary" aria-hidden="true"></i>
-      </td>
-      <td>23-03-2017</td>
-      <td>
+										 <!-- Carousel items -->
+										 <div class="carousel-inner">
+										 <div class="item active">
+											<div class="row">
+												<div class="col-md-2 col-xs-4"><a href="" class="thumbnail"><img src="https://3.bp.blogspot.com/-oyiuClRqAv8/W0Xul658ESI/AAAAAAAAZ7U/p_U8zaxPNSEX1WkWl97ruK1dK5rR-2vIQCLcBGAs/s1600/__800x800_59fFV.jpg" alt="Image" style="height:80px;"></a></div>
+												<div class="col-md-2 col-xs-4"><a href="http://tyd.or.tz" class="thumbnail"><img src="image/tyd.png" alt="Image" style="height:80px;"></a></div>
+												<div class="col-md-2 col-xs-4"><a href="" class="thumbnail"><img src="https://tyd.or.tz/img/projects/1521563057.jpg" alt="Image" style="height:80px;"></a></div>
+												<div class="col-md-2 col-xs-4"><a href="" class="thumbnail"><img src="https://tyd.or.tz/img/projects/1518791268.jpg" alt="Image" style="height:80px;"></a></div>
+											</div><!--.row-->
+										 </div><!--.item-->
 
-        <a href="career/9-kumbh-design-inc.html">
-          <img src="images/company/logo/359-logo1.jpg" class="img-responsive img-circle" alt="company-logo" class="img-semi-transparent-inverse" style="height:35px;width:35px;">
-        </a>
-      </td>
-      <td class="text-bold text-primary p"><a href="jobs/marketing-executive.html">Marketing Executive</a></td>
-      <td>Arts Design And Media</td>
-      <td>Ahmedabad</td>
-      <td>15000</td>
-      <td>Full Time</td>
-    </tr>
-  </table>
-</div>
-<div class="range range-xs-center offset-top-66">
-  <div class="cell-xs-5 cell-sm-3 cell-md-3 cell-lg-2"><a href="/vacanties" class="btn btn-primary reveal-xs-block">view all</a></div>
-</div>
-</div>
-</section>
+										 <div class="item">
+											<div class="row">
+                        <div class="col-md-2 col-xs-4"><a href="" class="thumbnail"><img src="https://3.bp.blogspot.com/-oyiuClRqAv8/W0Xul658ESI/AAAAAAAAZ7U/p_U8zaxPNSEX1WkWl97ruK1dK5rR-2vIQCLcBGAs/s1600/__800x800_59fFV.jpg" alt="Image" style="height:80px;"></a></div>
+                        <div class="col-md-2 col-xs-4"><a href="http://tyd.or.tz" class="thumbnail"><img src="image/tyd.png" alt="Image" style="height:80px;"></a></div>
+                        <div class="col-md-2 col-xs-4"><a href="" class="thumbnail"><img src="https://tyd.or.tz/img/projects/1521563057.jpg" alt="Image" style="height:80px;"></a></div>
+                        <div class="col-md-2 col-xs-4"><a href="" class="thumbnail"><img src="https://tyd.or.tz/img/projects/1518791268.jpg" alt="Image" style="height:80px;"></a></div>
+											</div><!--.row-->
+										 </div><!--.item-->
+
+										 <div class="item">
+											<div class="row">
+                        <div class="col-md-2 col-xs-4"><a href="" class="thumbnail"><img src="https://3.bp.blogspot.com/-oyiuClRqAv8/W0Xul658ESI/AAAAAAAAZ7U/p_U8zaxPNSEX1WkWl97ruK1dK5rR-2vIQCLcBGAs/s1600/__800x800_59fFV.jpg" alt="Image" style="height:80px;"></a></div>
+                        <div class="col-md-2 col-xs-4"><a href="http://tyd.or.tz" class="thumbnail"><img src="image/tyd.png" alt="Image" style="height:80px;"></a></div>
+                        <div class="col-md-2 col-xs-4"><a href="" class="thumbnail"><img src="https://tyd.or.tz/img/projects/1521563057.jpg" alt="Image" style="height:80px;"></a></div>
+                        <div class="col-md-2 col-xs-4"><a href="" class="thumbnail"><img src="https://tyd.or.tz/img/projects/1518791268.jpg" alt="Image" style="height:80px;"></a></div>
+											</div>
+										 </div>
+
+
+
+			 </div>
+			</div>
+		 </div>
+			</div>
+
+		</div>
 
 
 
 
-<section class="section-98 section-sm-110 bg-gray-light">
-<div class="shell">
-<h1>Latest Blog Posts</h1>
-<hr class="divider divider-sm bg-darkers">
-<div class="range range-xs-center">
-
-    <div class="cell-sm-9 cell-md-4">
-      <div class="thumbnail">
-        <img src="image/Swisscom.jpg" alt="..." style="height:200px;">
-        <div class="caption">
-          <a href="" style="font-size:1.2em; text-decoration:none;">Get To know how to work without get tired with the thing you like</a>
-          <p style="margin-top:10px;">Does the thought of securing your first “real” job put the same pit in your stomach as a calculus final? Employ these strategies for new college grads to reduce anxiety and start your career journey with confidence.</p>
-        </div>
-        <div class="post-tags group-xs offset-top-24 text-center">
-          <button type="submit" class="btn btn-primary btn-view-more">view more</button>
-        </div>
-      </div>
-    </div>
-    <div class="cell-sm-9 cell-md-4">
-      <div class="thumbnail">
-        <img src="image/Swisscom.jpg" alt="..." style="height:200px;">
-        <div class="caption">
-          <a href="" style="font-size:1.2em; text-decoration:none;">Tips for New College Grads Who Are Nervous About Landing a Field training</a>
-          <p style="margin-top:10px;">Does the thought of securing your first “real” job put the same pit in your stomach as a calculus final? Employ these strategies for new college grads to reduce anxiety and start your career journey with confidence.</p>
-        </div>
-        <div class="post-tags group-xs offset-top-24 text-center">
-          <button type="submit" class="btn btn-primary btn-view-more">view more</button>
-        </div>
-      </div>
-    </div>
-    <div class="cell-sm-9 cell-md-4">
-      <div class="thumbnail">
-        <img src="image/Swisscom.jpg" alt="..." style="height:200px;">
-        <div class="caption">
-          <a href="" style="font-size:1.2em; text-decoration:none;">How to Face challenge of new administration in work enviroment</a>
-          <p style="margin-top:10px;">Does the thought of securing your first “real” job put the same pit in your stomach as a calculus final? Employ these strategies for new college grads to reduce anxiety and start your career journey with confidence.</p>
-        </div>
-        <div class="post-tags group-xs offset-top-24 text-center">
-          <button type="submit" class="btn btn-primary btn-view-more">view more</button>
-        </div>
-      </div>
-    </div>
-</div>
-<div class="range range-xs-center offset-top-66">
-  <div class="cell-xs-7 cell-sm-5 cell-md-4 cell-lg-3">
-    <div class="inset-lg-left-20 inset-lg-right-20"><a href="blog.html" class="btn btn-primary reveal-xs-block">view all blog posts</a></div>
-  </div>
-</div>
-</div>
-</section>
-
-<div class="row" style="margin-bottom:30px;">
-  <div class="col-md-12 col-sm-12 col-xs-12">
-                <div id="Carousel" class="carousel slide">
-
-                <ol class="carousel-indicators">
-                    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#Carousel" data-slide-to="1"></li>
-                    <li data-target="#Carousel" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-                <div class="item active">
-                 <div class="row">
-                   <div class="col-md-2 col-xs-4"><a href="http://reg.thonburi-u.ac.th/registrar/home.asp" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/1.jpg" alt="Image" style="height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="http://www.spu.ac.th/" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/2.jpg" alt="Image" style="height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="http://www.spu.ac.th/" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/3.png" alt="Image" style="height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="https://www.mahidol.ac.th/th/" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/4.jpg" alt="Image" style="height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="http://www.kkopenzoo.com/" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/5.jpg" alt="Image" style="height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="http://www.songkhlazoo.com/" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/6.jpg" alt="Image" style="height:80px;"></a></div>
-                 </div><!--.row-->
-                </div><!--.item-->
-
-                <div class="item">
-                 <div class="row">
-                   <div class="col-md-2 col-xs-4"><a href="http://www.zoothailand.org/" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/7.jpg" alt="Image" style="max-height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="http://www.diw.go.th/" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/17.png" alt="Image" style="max-height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="http://www.dss.go.th/" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/9.png" alt="Image" style="max-height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="http://www.dip.go.th/" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/10.png" alt="Image" style="max-height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="http://www.dpim.go.th/" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/11.png" alt="Image" style="max-height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="http://www.nstda.or.th/index.php" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/12.jpg" alt="Image" style="max-height:80px;"></a></div>
-                 </div><!--.row-->
-                </div><!--.item-->
-
-                <div class="item">
-                 <div class="row">
-                   <div class="col-md-2 col-xs-4"><a href="http://www.oaep.go.th/" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/13.png" alt="Image" style="max-height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="http://www.ops.go.th/" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/14.jpg" alt="Image" style="max-height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="/www.tisi.go.th" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/15.png" alt="Image" style="max-height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="/www.oie.go.th/" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/16.png" alt="Image" style="max-height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="http://reg.thonburi-u.ac.th/registrar/home.asp" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/1.jpg" alt="Image" style="max-height:80px;"></a></div>
-                   <div class="col-md-2 col-xs-4"><a href="http://www.spu.ac.th" class="thumbnail"><img src="https://tmaxtech.co.th/images/Partner/2.jpg" alt="Image" style="height:80px;"></a></div>
-                 </div>
-                </div>
-
-
-
-  </div>
- </div>
-</div>
-</div>
 
 <script>
 $(document).ready(function() {

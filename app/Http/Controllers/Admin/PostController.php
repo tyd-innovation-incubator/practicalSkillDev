@@ -43,7 +43,8 @@ class PostController extends Controller
 
       $tags = tag::all();
       $categories = category::all();
-        return view('admin.post.post',compact('tags','categories'));
+        return view('admin.post.
+          ',compact('tags','categories'));
     }
 
     /**

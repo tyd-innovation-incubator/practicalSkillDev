@@ -2,22 +2,22 @@
 
 @section('content')
 
-<div class="context-dark">
-		<section class="breadcrumb-modern rd-parallax bg-gray-darkest">
-			<div data-speed="0.2" data-type="media" data-url="http://www.powerjob.in/images/background-02-1920x870.jpg" class="rd-parallax-layer"></div>
-			<div data-speed="0" data-type="html" class="rd-parallax-layer">
-				<div class="bg-overlay-gray-darkest">
-					<div class="shell section-top-98 section-bottom-34 section-md-bottom-66 section-md-98 section-lg-top-155 section-lg-bottom-66">
-						<div class="text-extra-big text-bold veil reveal-md-block">Company</div>
-						<ul class="list-inline list-inline-dashed p offset-top-0 offset-lg-top-20">
-							<li><a href="index.html">Home</a></li>
-							<li>Login or Registration</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+
+<section id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+              <img src="/image/DAR ES SALAM - GettyImages-488050656.jpg" alt="..." style="width:100%; height:250px;">
+                <div class="carousel-caption">
+                  <div class="swiper-slide-caption">
+                    <div class="shell">
+                      <div class="range range-lg-center">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+    </section>
 
 	<main class="page-content">
 		<section class="section-98 section-sm-110">
