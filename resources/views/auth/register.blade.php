@@ -4,7 +4,8 @@
 
 		<!-- Title Header Start -->
 		<section class="signup-screen-sec">
-					<form class="form-horizontal" method="POST" action="{{ route('register') }}" style="background-color: ; margin-left: 100px">
+			{!! Form::open(['url' => 'register', 'autocomplete' => 'off', 'class' => 'needs-validation', 'novalidate','style'=>"background-color: ; margin-left: 100px"]) !!}
+					{{--<form class="form-horizontal" method="POST" action="{{ route('register') }}" style="background-color: ; margin-left: 100px">--}}
 						{{ csrf_field() }}
 
 						<div class="card">
@@ -90,13 +91,16 @@
 											<div class="col-xs-12 col-sm-6 col-md-4">
 												<div class="form-group{{ $errors->has('country') ? ' has-error' : '' }}">
 													<label for="">Country</label>
+													{!! Form::select('country',$countries, [], ['class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'country', 'aria-describedby' => 'countryHelp', 'required']) !!}
+													{{--<small id="countryHelp" class="form-text text-muted">{{ __("label.country_helper") }}</small>--}}
+													{!! $errors->first('country', '<span class="badge badge-danger">:message</span>') !!}
 
-													<input id="country" type="text" class="form-control" name="country" value="{{ old('country') }}" placeholder="" required autofocus>
-													@if ($errors->has('country'))
-														<span class="help-block">
-														<strong>{{ $errors->first('country') }}</strong>
-												</span>
-													@endif
+													{{--<input id="country" type="text" class="form-control" name="country" value="{{ old('country') }}" placeholder="" required autofocus>--}}
+													{{--@if ($errors->has('country'))--}}
+														{{--<span class="help-block">--}}
+														{{--<strong>{{ $errors->first('country') }}</strong>--}}
+												{{--</span>--}}
+													{{--@endif--}}
 												</div>
 											</div>
 										</div>
@@ -110,7 +114,7 @@
 												<div class="form-group{{ $errors->has('region') ? ' has-error' : '' }}">
 													<label for="">Region</label>
 
-													<input id="region" type="text" class="form-control" name="region" value="{{ old('region') }}" placeholder="" required autofocus>
+													{!! Form::select('region',$regions, [], ['class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'country', 'aria-describedby' => 'countryHelp', 'required']) !!}
 													@if ($errors->has('region'))
 														<span class="help-block">
 														<strong>{{ $errors->first('region') }}</strong>
@@ -183,7 +187,7 @@
 
 								</div>
 						</div>
-					</form>
+			{!! Form::close() !!}
 		</section>
 
 @endsection

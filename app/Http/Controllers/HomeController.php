@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Model\Systdef\Country;
 use App\Model\user\post;
 use App\Model\user\Training;
 
@@ -26,7 +27,10 @@ class HomeController extends Controller
     public function index()
     {
       $posts = post::where('status',1)->paginate(3);
-    return view('home',compact('posts'));
+        $countries = Country::pluck('name','id');
+    return view('home')
+        ->with('posts',$posts)
+        ->with('countries',$countries);
     }
 
 }
