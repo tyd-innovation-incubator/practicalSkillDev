@@ -17,10 +17,11 @@
                        <input type="text" class="form-control right-bor" placeholder="Skills, Designations, Companies">
                      </div>
                   </div>
-                  <div class="col-md-4 no-padd">
-                     <div class="input-group">
-                       <input type="text" class="form-control right-bor" placeholder="Search By Location..">
-                     </div>
+                  <div class="col-md-4 ">
+                      <div class="form-group">
+                          {!! Form::select('region',$regions, [], ['class' => 'form-control', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'country', 'required']) !!}
+                          {!! $errors->first('password', '<span class="badge badge-danger">:message</span>') !!}
+                      </div>
                   </div>
 
 
