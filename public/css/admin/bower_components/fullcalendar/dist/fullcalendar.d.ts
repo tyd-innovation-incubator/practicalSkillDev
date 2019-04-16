@@ -376,7 +376,7 @@ declare module 'fullcalendar/Model' {
 	export default Default;
 }
 declare module 'fullcalendar/OptionsManager' {
-	import Model from 'fullcalendar/Model';
+	import Model from 'fullcalendar/Models';
 	export class Default extends Model {
 	    _calendar: any;
 	    dirDefaults: any;
@@ -1108,7 +1108,7 @@ declare module 'fullcalendar/src/date-formatting' {
 	export function queryMostGranularFormatUnit(formatStr: any): any;
 }
 declare module 'fullcalendar/Component' {
-	import Model from 'fullcalendar/Model';
+	import Model from 'fullcalendar/Models';
 	export class Default extends Model {
 	    el: any;
 	    setElement(el: any): void;
@@ -2467,7 +2467,7 @@ declare module 'fullcalendar/src/exports' {
 	export { default as moment } from 'fullcalendar/src/moment-ext';
 	export { default as EmitterMixin, EmitterInterface } from 'fullcalendar/EmitterMixin';
 	export { default as ListenerMixin, ListenerInterface } from 'fullcalendar/ListenerMixin';
-	export { default as Model } from 'fullcalendar/Model';
+	export { default as Model } from 'fullcalendar/Models';
 	export { default as Constraints } from 'fullcalendar/Constraints';
 	export { default as UnzonedRange } from 'fullcalendar/UnzonedRange';
 	export { default as ComponentFootprint } from 'fullcalendar/ComponentFootprint';

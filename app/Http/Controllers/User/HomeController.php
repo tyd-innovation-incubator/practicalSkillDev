@@ -1,13 +1,10 @@
 <?php
 
 namespace App\Http\Controllers\User;
-use App\Model\user\post;
-use App\Model\user\Training;
-use App\Model\user\tag;
-use App\Model\user\Apply;
 
-use App\Model\user\category;
 
+
+use App\Models\User\Post;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -15,7 +12,7 @@ class HomeController extends Controller
 {
     public function Home()
     {
-      $posts = post::where('status',1)->orderBy('created_at','DESC')->paginate(6);
+      $posts = Post::where('status',1)->orderBy('created_at','DESC')->paginate(6);
 
     return view('user.skills',compact('posts'));
     }

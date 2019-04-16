@@ -5171,7 +5171,7 @@ var Model = /** @class */ (function (_super) {
     return Model;
 }(Class_1.default));
 exports.default = Model;
-Model.prototype._globalWatchArgs = {}; // mutation protection in Model.watch
+Model.prototype._globalWatchArgs = {}; // mutation protection in Models.watch
 EmitterMixin_1.default.mixInto(Model);
 ListenerMixin_1.default.mixInto(Model);
 

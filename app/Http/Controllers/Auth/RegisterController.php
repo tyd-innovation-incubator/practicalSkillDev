@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Model\user\User;
+use App\Http\Requests\CreateUserRequest;
+use App\Models\User\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -65,18 +67,32 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return User
      */
-    protected function create(array $data)
+    protected function create(Request $request)
     {
+        $input = $request->all();
         return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'phone' => $data['phone'],
-            'username' => $data['username'],
-            'othernames' => $data['othernames'],
-            'country' => $data['country'],
-            'region' => $data['region'],
-            'province' => $data['province'],
-            'password' => bcrypt($data['password']),
+            'name' => $input['name'],
+            'othernames' => $input['othernames'],
+            'confirmation_code'=>$input['confirm_password'],
+            'email' => $input['email'],
+            'user_account' =>$input['user_account'],
+            'password' => bcrypt($input['password']),
         ]);
+    }
+
+    public function registerUser(Request $request)
+    {
+      $input = $request->all();
+        $user = User::create([
+            'name' => $input['name'],
+            'othernames' => $input['othernames'],
+
+            'confirmation_code'=>$input['confirm_password'],
+            'email' => $input['email'],
+            'user_account' =>$input['user_account'],
+            'password' => bcrypt($input['password']),
+        ]);
+
+        return redirect('/home');
     }
 }

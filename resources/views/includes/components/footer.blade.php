@@ -1,101 +1,75 @@
-
-<!-- Footer Section Start -->
-<footer class="footer">
-    <div class="row lg-menu">
-        <div class="container">
-            <div class="col-md-4 col-sm-4">
-                <img src="/image/LogoMakr_4WXAYZ.png"  style="width:300px;" class="img-responsive" alt="" />
-            </div>
-            <div class="col-md-8 co-sm-8 pull-right">
-                <ul>
-                    <li><a href="/" title="">Home</a></li>
-                    <li><a href="/posts" title="">Soft Skills</a></li>
-                    <li><a href="/Help" title="">FAQ</a></li>
-                    <li><a href="/contact" title="">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="row no-padding">
-        <div class="container">
-
-            <div class="col-md-3 col-sm-12">
-                <div class="footer-widget">
-                    <h3 class="widgettitle widget-title">About PRASDEL</h3>
-                    <div class="textwidget">
-                        <p>PRACTICAL SKILL DEVELOPMENT LINK</p>
-                        <p>Ilala Bungoni<br>
-                            Dar Es Salaa,</p>
-                        <p><strong>Email:</strong> Support@prasdel.co.tz</p>
-                        <p><strong>Call:</strong> <a href="tel:0753070202">0753070202</a></p>
-                        <ul class="footer-social">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-4">
-                <div class="footer-widget">
-                    <h3 class="widgettitle widget-title">All Navigation</h3>
-                    <div class="textwidget">
-                        <div class="textwidget">
-                            <ul class="footer-navigation">
-                                <li><a href="" title="">Front-end Design</a></li>
-                                <li><a href="" title="">Android Developer</a></li>
-                                <li><a href="" title="">CMS Development</a></li>
-                                <li><a href="" title="">PHP Development</a></li>
-                                <li><a href="" title="">IOS Developer</a></li>
-                                <li><a href="" title="">Iphone Developer</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-4">
-                <div class="footer-widget">
-                    <h3 class="widgettitle widget-title">All Categories</h3>
-                    <div class="textwidget">
-                        <ul class="footer-navigation">
-                            <li><a href="" title="">Front-end Design</a></li>
-                            <li><a href="" title="">Android Developer</a></li>
-                            <li><a href="" title="">CMS Development</a></li>
-                            <li><a href="" title="">PHP Development</a></li>
-                            <li><a href="" title="">IOS Developer</a></li>
-                            <li><a href="" title="">Iphone Developer</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-4">
-                <div class="footer-widget">
-                    <h3 class="widgettitle widget-title">Connect Us</h3>
-                    <div class="textwidget">
-                        <form class="footer-form">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                            <input type="email" class="form-control" placeholder="Email">
-                            <textarea class="form-control" placeholder="Message"></textarea>
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row copyright">
-        <div class="container">
-            <p>Copyright <a href="http://tyd.or.tz"> TYDInnovationIncubator </a>© 2017. All Rights Reserved
-
-            </p>
-        </div>
-    </div>
-</footer>
-<div class="clearfix"></div>
-<!-- Footer Section End -->
+<div class="section footer transparent" style="background-image: url('images/background03.jpg');">
+  <div class="container">
+    <div class="top flex space-between items-center">
+      <img src="images/footer-logo.png" alt="footer-logo" class="img-responsive">
+      <ul class="list-unstyled footer-menu flex">
+        <li><a href="#0">Home</a></li>
+        <li><a href="#0">About</a></li>
+        <li><a href="#0">Browse Jobs</a></li>
+        <li><a href="#0">Browse candidates</a></li>
+        <li><a href="#0">Contact</a></li>
+      </ul> <!-- end .footer-menu -->
+    </div> <!-- end .top -->
+    <div class="footer-widgets flex no-column space-between">
+      <div class="widget">
+        <h6>About</h6>
+        <ul class="list-unstyled">
+          <li><a href="#0">Company</a></li>
+          <li><a href="#0">Our Partners</a></li>
+          <li><a href="#0">Blog</a></li>
+          <li><a href="#0">FAQ</a></li>
+          <li><a href="#0">Pricing</a></li>
+          <li><a href="#0">Help Center</a></li>
+          <li><a href="#0">Team</a></li>
+          <li><a href="#0">Contact Us</a></li>
+        </ul>
+      </div> <!-- end .widget -->
+      <div class="widget">
+        <h6>For candidates</h6>
+        <ul class="list-unstyled">
+          <li><a href="#0">Browse Jobs</a></li>
+          <li><a href="#0">Browse categories</a></li>
+          <li><a href="#0">Submit Resume</a></li>
+          <li><a href="#0">Candidate Dashboard</a></li>
+          <li><a href="#0">Job Alerts</a></li>
+          <li><a href="#0">My Bookmarks</a></li>
+        </ul>
+      </div> <!-- end .widget -->
+      <div class="widget">
+        <h6>For companies</h6>
+        <ul class="list-unstyled">
+          <li><a href="#0">Browse Candidates</a></li>
+          <li><a href="#0">Company Dashboard</a></li>
+          <li><a href="#0">Add A Job</a></li>
+          <li><a href="#0">Packages</a></li>
+        </ul>
+      </div> <!-- end .widget -->
+      <div class="widget">
+        <h6>Follow us</h6>
+        <ul class="list-unstyled social-icons flex no-column">
+          <li><a href="#0"><i class="ion-social-twitter"></i></a></li>
+          <li><a href="#0"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="#0"><i class="ion-social-youtube"></i></a></li>
+          <li><a href="#0"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="#0"><i class="ion-social-linkedin"></i></a></li>
+        </ul>
+        <h6>Subscribe Us</h6>
+        <p>Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor vitae augue.</p>
+                  <form class="form-inline subscribe-form flex no-column no-wrap items-center">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your email">
+                      </div> <!-- end .form-group -->
+                      <button type="submit" class="button"><i class="ion-ios-arrow-thin-right"></i></button>
+                  </form>
+      </div> <!-- end .widget -->
+    </div> <!-- end .footer-widgets -->
+    <div class="bottom flex space-between items-center">
+      <p class="copyright-text small">&copy; 2017 <a href="#0">JobPress</a>. All Rights Reserved. Designed by <a href="#0">LeoStudo</a>.</p>
+      <ul class="list-unstyled copyright-menu flex no-column">
+        <li><a href="#0">Privacy policy</a></li>
+        <li><a href="#0">Terms of service</a></li>
+        <li><a href="#0">Conditions</a></li>
+      </ul> <!-- end .copyright-menu -->
+    </div> <!-- end .bottom -->
+  </div> <!-- end .container -->
+</div> <!-- end .footer -->

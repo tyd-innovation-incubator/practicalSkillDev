@@ -29,7 +29,7 @@ class CreateUsersTable extends Migration
     $table->smallInteger('isactive')->default(1);
     $table->smallInteger('available')->default(1)->comment('set whether user is available to be seen by other portal users or not 1. Yes, 0. No ( If set 0, other users will not find this user through searching )');
     $table->string('uuid', 100);
-    $table->string('external_id', 100)->nullable()->comment('any additional reference for this user');
+    $table->string('user_account', 100)->nullable()->comment('any additional reference for this user');
     $table->text('province')->nullable()->comment('home location of the user if he is not living in Tanzania');
     $table->decimal('rating', 2, 1)->default(0.0)->comment('Rating of the user ranging from 0 - 5.0 as generally provided users. This will be derived as the average from the user_reviews table');
     $table->string('lang', 2)->default('sw')->comment('language selected by the user ');

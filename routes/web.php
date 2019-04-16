@@ -14,9 +14,10 @@
 
 Route::get('/','User\WelcomeController@index');
 
-Auth::routes();
+// Auth::routes();
 
-
+Route::post('/register','Auth\RegisterController@registerUser');
+Route::post('/login','Auth\LoginController@login');
 //user routes
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/apply', 'HomeController@apply')->name('apply');
@@ -99,5 +100,3 @@ Route::get('/Help',function(){
 Route::get('/pricingplan',function(){
   return view('user.pricingplan');
 });
-
-
