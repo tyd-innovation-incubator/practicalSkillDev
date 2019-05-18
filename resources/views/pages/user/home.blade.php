@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('template_title')
     {{ Auth::user()->name }}'s' Homepage
@@ -9,15 +9,26 @@
 
 @section('content')
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-10 offset-lg-1">
+    <!-- Search start -->
+    @include('includes.search')
+    <!-- Search End -->
 
-                @include('panels.welcome-panel')
 
-            </div>
-        </div>
-    </div>
+
+    <!-- How it Works start -->
+    @include('includes.how_its_works')
+    <!-- How it Works Ends -->
+
+    <!-- Featured Jobs start -->
+    @include('includes.features_job')
+    <!-- Featured Jobs ends -->
+
+    <!-- Popular Searches start -->
+    @include('includes.popular_search')
+    <!-- Popular Searches ends -->
+
+    <!-- Top Employers start -->
+    @include('includes.employer')
 
 @endsection
 

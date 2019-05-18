@@ -1,100 +1,76 @@
-<!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main', ['title' => __("label.home"), 'header' => __("label.home")])
 
-        <title>Laravel</title>
+@push('after-styles')
+{{ Html::style(url('vendor/select2/css/select2.min.css')) }}
+{{ Html::style(url('vendor/owl.carousel/assets/owl.carousel.css')) }}
+{{ Html::style(url('vendor/owl.carousel/assets/owl.theme.default.css')) }}
+<style>
+    #image_box
+    {
+        max-width:150px;
+    }
+</style>
+@endpush
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+@section('content')
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+    <!-- Search start -->
+    @include('includes.search')
+    <!-- Search End -->
 
-            .full-height {
-                height: 100vh;
-            }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
 
-            .position-ref {
-                position: relative;
-            }
+    <!-- How it Works start -->
+    @include('includes.how_its_works')
+    <!-- How it Works Ends -->
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+    <!-- Featured Jobs start -->
+    @include('includes.features_job')
+    <!-- Featured Jobs ends -->
 
-            .content {
-                text-align: center;
-            }
+    <!-- Popular Searches start -->
+@include('includes.popular_search')
+    <!-- Popular Searches ends -->
 
-            .title {
-                font-size: 84px;
-            }
+    <!-- Top Employers start -->
+    @include('includes.employer')
+    <!-- Top Employers ends -->
+    <!-- Video start -->
+    {{--<div class="videowraper section">--}}
 
-            .title small {
-                font-size: 60px;
-            }
+        {{--<div class="container">--}}
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+            {{--<!-- title start -->--}}
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-            <div class="content">
-                <div class="title m-b-md">
-                    {!! trans('titles.app') !!}<br />
-                    <small>
-                        {{ trans('titles.app2', ['version' => config('settings.app_project_version')]) }}
-                    </small>
-                </div>
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+            {{--<div class="titleTop">--}}
+
+                {{--<div class="subtitle">Here You Can See</div>--}}
+
+                {{--<h3>Watch Our <span>Video</span></h3>--}}
+
+            {{--</div>--}}
+
+            {{--<!-- title end -->--}}
+
+
+
+            {{--<p>Our partners make Milestone products more dynamic and integrations push the limits of what is possible. XProtect® software protects animals from known poachers and protects the city of Minneapolis.</p>--}}
+
+            {{--<a href="https://youtu.be/EU7PRmCpx-0" target="_blank"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a> </div>--}}
+
+    {{--</div>--}}
+    <!-- Video end -->
+
+
+
+
+
+@endsection
+
+@push('after-scripts')
+{!! Html::script(url('vendor/select2/js/select2.min.js')) !!}
+{!! Html::script(url('vendor/owl.carousel/owl.carousel.js')) !!}
+<script>
+
+</script>
+@endpush

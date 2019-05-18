@@ -57,11 +57,11 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        $data['captcha'] = $this->captchaCheck();
-
-        if (!config('settings.reCaptchStatus')) {
-            $data['captcha'] = true;
-        }
+//        $data['captcha'] = $this->captchaCheck();
+//
+//        if (!config('settings.reCaptchStatus')) {
+//            $data['captcha'] = true;
+//        }
 
         return Validator::make($data,
             [
@@ -71,8 +71,8 @@ class RegisterController extends Controller
                 'email'                 => 'required|email|max:255|unique:users',
                 'password'              => 'required|min:6|max:30|confirmed',
                 'password_confirmation' => 'required|same:password',
-                'g-recaptcha-response'  => '',
-                'captcha'               => 'required|min:1',
+//                'g-recaptcha-response'  => '',
+//                'captcha'               => 'required|min:1',
             ],
             [
                 'name.unique'                   => trans('auth.userNameTaken'),
@@ -85,7 +85,7 @@ class RegisterController extends Controller
                 'password.min'                  => trans('auth.PasswordMin'),
                 'password.max'                  => trans('auth.PasswordMax'),
                 'g-recaptcha-response.required' => trans('auth.captchaRequire'),
-                'captcha.min'                   => trans('auth.CaptchaWrong'),
+//                'captcha.min'                   => trans('auth.CaptchaWrong'),
             ]
         );
     }
@@ -102,6 +102,8 @@ class RegisterController extends Controller
         $ipAddress = new CaptureIpTrait();
         $role = Role::where('slug', '=', 'unverified')->first();
 
+        $user_account = $data['user_account'];
+
         $user = User::create([
                 'name'              => $data['name'],
                 'first_name'        => $data['first_name'],
@@ -111,10 +113,11 @@ class RegisterController extends Controller
                 'token'             => str_random(64),
                 'signup_ip_address' => $ipAddress->getClientIp(),
                 'activated'         => !config('settings.activation'),
+            'user_account' =>$user_account
             ]);
 
         $user->attachRole($role);
-        $this->initiateEmailActivation($user);
+//        $this->initiateEmailActivation($user);
 
         return $user;
     }

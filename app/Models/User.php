@@ -47,6 +47,7 @@ class User extends Authenticatable
         'admin_ip_address',
         'updated_ip_address',
         'deleted_ip_address',
+        'user_account',
     ];
 
     /**
@@ -72,7 +73,7 @@ class User extends Authenticatable
      */
     public function social()
     {
-        return $this->hasMany('App\Models\Social');
+        return $this->hasMany(Social::class);
     }
 
     /**
@@ -82,14 +83,22 @@ class User extends Authenticatable
      */
     public function profile()
     {
-        return $this->hasOne('App\Models\Profile');
+        return $this->hasOne(Profile::class);
     }
+
+    public function userAccounts()
+    {
+       return $this->belongsToMany(UserAccount::class);
+    }
+
+
+
 
     // User Profile Setup - SHould move these to a trait or interface...
 
     public function profiles()
     {
-        return $this->belongsToMany('App\Models\Profile')->withTimestamps();
+        return $this->belongsToMany(Profile::class)->withTimestamps();
     }
 
     public function hasProfile($name)
