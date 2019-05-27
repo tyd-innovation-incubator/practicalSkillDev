@@ -6,6 +6,7 @@ use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -17,6 +18,8 @@ class AppServiceProvider extends ServiceProvider
     {
         //Paginator::useBootstrapThree();
         Schema::defaultStringLength(191);
+
+
     }
 
     /**

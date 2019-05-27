@@ -22,6 +22,7 @@ class EventServiceProvider extends ServiceProvider
             'SocialiteProviders\Instagram\InstagramExtendSocialite@handle',
             'SocialiteProviders\ThirtySevenSignals\ThirtySevenSignalsExtendSocialite@handle',
         ],
+
     ];
 
     /**

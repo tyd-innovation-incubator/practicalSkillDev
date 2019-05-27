@@ -83,4 +83,7 @@ return [
         'redirect'      => env('37SIGNALS_REDIRECT_URI'),
     ],
 
-];
+        'model' => App\User::class,
+        'key' => env('STRIPE_KEY'),
+        'secret' => env('STRIPE_SECRET'),
+    ];

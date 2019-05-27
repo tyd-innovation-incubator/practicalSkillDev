@@ -2,11 +2,15 @@
 
 namespace App\Repositories;
 
-
 use App\Exceptions\GeneralException;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
+use Illuminate\Database\Eloquent\Collection;
+
+/**
+ * Class BaseRepository.
+ */
 class BaseRepository
 {
     /**
@@ -49,6 +53,7 @@ class BaseRepository
     }
 
     /**
+<<<<<<< HEAD
      * @param array $input
      * @return mixed
      * Regex column search
@@ -94,11 +99,17 @@ class BaseRepository
         return ['sql' => $sql, 'keyword' => $keyword];
     }
     /**
+=======
+>>>>>>> 1156cf3bfa4bf2513e851ccbffac807c55ad3cc4
      * Check if phone number is unique
      * @param $phone_formatted
      * @param $phone_column_name
      * @param $action_type
+<<<<<<< HEAD
      * @param null $object_id => primary key of the model
+=======
+     * @param null $object_id
+>>>>>>> 1156cf3bfa4bf2513e851ccbffac807c55ad3cc4
      * @throws GeneralException
      */
     public function checkIfPhoneIsUnique($phone_formatted,$phone_column_name, $action_type,$object_id = null)
@@ -156,7 +167,7 @@ class BaseRepository
     public function checkIfCompanyOrUserIsOwner(Model $model)
     {
         $user = access()->user();
-        /*Check if Model is owned by company*/
+
         if (count($model->company_id)){
             $this->checkIfCompanyIsOwner($model);
         }else{
@@ -245,3 +256,4 @@ class BaseRepository
 
 
 }
+

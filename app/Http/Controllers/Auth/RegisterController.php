@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use jeremykenedy\LaravelRoles\Models\Role;
 
+
 class RegisterController extends Controller
 {
     /*
@@ -27,6 +28,7 @@ class RegisterController extends Controller
 
     use ActivationTrait;
     use CaptchaTrait;
+
     use RegistersUsers;
 
     /**
@@ -35,6 +37,7 @@ class RegisterController extends Controller
      * @var string
      */
     protected $redirectTo = '/activate';
+
 
     /**
      * Create a new controller instance.
@@ -46,13 +49,18 @@ class RegisterController extends Controller
         $this->middleware('guest', [
             'except' => 'logout',
         ]);
+
     }
 
     /**
      * Get a validator for an incoming registration request.
      *
+<<<<<<< HEAD
      * @param array $data
      *
+=======
+     * @param  array  $data
+>>>>>>> 1156cf3bfa4bf2513e851ccbffac807c55ad3cc4
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
@@ -88,11 +96,13 @@ class RegisterController extends Controller
 //                'captcha.min'                   => trans('auth.CaptchaWrong'),
             ]
         );
+
     }
 
     /**
      * Create a new user instance after a valid registration.
      *
+<<<<<<< HEAD
      * @param array $data
      *
      * @return User
@@ -120,5 +130,6 @@ class RegisterController extends Controller
 //        $this->initiateEmailActivation($user);
 
         return $user;
+
     }
 }

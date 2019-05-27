@@ -4,6 +4,9 @@ namespace Tests\Unit;
 
 use Tests\TestCase;
 
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+
 class ExampleTest extends TestCase
 {
     /**
@@ -14,5 +17,17 @@ class ExampleTest extends TestCase
     public function testBasicTest()
     {
         $this->assertTrue(true);
+    }
+
+    /**
+     * Creates the application.
+     *
+     * Needs to be implemented by subclasses.
+     *
+     * @return \Symfony\Component\HttpKernel\HttpKernelInterface
+     */
+    public function createApplication()
+    {
+        // TODO: Implement createApplication() method.
     }
 }

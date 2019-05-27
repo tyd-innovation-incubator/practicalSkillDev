@@ -17,6 +17,7 @@ class AddColumnUserAccountOnUsers extends Migration
         Schema::table('users', function (Blueprint $table) {
       $table->smallInteger('user_account')->default(0)->comment('check if the company information is legit; 0 => pending, 1 -> administrator, 2 -> company, 3 -> candidate ');
 
+
   });
     }
 

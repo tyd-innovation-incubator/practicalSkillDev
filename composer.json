@@ -31,7 +31,9 @@
         "socialiteproviders/generators": "^2.0",
         "socialiteproviders/instagram": "^3.0",
         "socialiteproviders/twitch": "^3.0",
-        "socialiteproviders/youtube": "^3.0"
+        "socialiteproviders/youtube": "^3.0",
+        "webpatser/laravel-uuid": "^3.0"
+
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -78,6 +80,7 @@
     },
     "config": {
         "optimize-autoloader": true,
+
         "preferred-install": "dist",
         "sort-packages": true
     }

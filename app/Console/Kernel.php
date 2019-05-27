@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\DeleteExpiredActivations::class,
+        //
     ];
 
     /**
@@ -30,6 +31,7 @@ class Kernel extends ConsoleKernel
 
         $schedule->command('activations:clean')
                     ->daily();
+
     }
 
     /**

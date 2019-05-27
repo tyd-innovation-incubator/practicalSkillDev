@@ -1,8 +1,14 @@
 <?php
 
 /**
+<<<<<<< HEAD
  * Laravel - A PHP Framework For Web Artisans.
  *
+=======
+ * Laravel - A PHP Framework For Web Artisans
+ *
+ * @package  Laravel
+>>>>>>> 1156cf3bfa4bf2513e851ccbffac807c55ad3cc4
  * @author   Taylor Otwell <taylor@laravel.com>
  */
 

@@ -9,6 +9,11 @@ class CountriesTableSeeder extends Seeder
 
     /**
      * Auto generated seed file
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
      *
      * @return void
      */
@@ -1517,3 +1522,4 @@ class CountriesTableSeeder extends Seeder
 
     }
 }
+

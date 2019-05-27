@@ -38,6 +38,7 @@ return [
             'driver'      => 'database',
             'table'       => 'jobs',
             'queue'       => 'default',
+
             'retry_after' => 90,
         ],
 
@@ -45,6 +46,7 @@ return [
             'driver'      => 'beanstalkd',
             'host'        => 'localhost',
             'queue'       => 'default',
+
             'retry_after' => 90,
         ],
 
@@ -54,6 +56,7 @@ return [
             'secret' => 'your-secret-key',
             'prefix' => 'https://sqs.us-east-1.amazonaws.com/your-account-id',
             'queue'  => 'your-queue-name',
+
             'region' => 'us-east-1',
         ],
 
@@ -69,6 +72,7 @@ return [
             'connection' => 'default',
             'queue'      => 'social',
             'expire'     => 60,
+
         ],
 
     ],
@@ -87,6 +91,7 @@ return [
     'failed' => [
         'database' => env('DB_CONNECTION', 'mysql'),
         'table'    => 'failed_jobs',
+
     ],
 
 ];

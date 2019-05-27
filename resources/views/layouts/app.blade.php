@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="{{ config('app.locale') }}">
     <head>
         <meta charset="utf-8">
@@ -84,4 +85,5 @@
         @yield('footer_scripts')
 
     </body>
+
 </html>

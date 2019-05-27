@@ -24,6 +24,7 @@ return [
     'before'          => 'The :attribute must be a date before :date.',
     'before_or_equal' => 'The :attribute must be a date before or equal to :date.',
     'between'         => [
+
         'numeric' => 'The :attribute must be between :min and :max.',
         'file'    => 'The :attribute must be between :min and :max kilobytes.',
         'string'  => 'The :attribute must be between :min and :max characters.',
@@ -49,6 +50,7 @@ return [
     'ip'             => 'The :attribute must be a valid IP address.',
     'json'           => 'The :attribute must be a valid JSON string.',
     'max'            => [
+
         'numeric' => 'The :attribute may not be greater than :max.',
         'file'    => 'The :attribute may not be greater than :max kilobytes.',
         'string'  => 'The :attribute may not be greater than :max characters.',
@@ -57,6 +59,7 @@ return [
     'mimes'     => 'The :attribute must be a file of type: :values.',
     'mimetypes' => 'The :attribute must be a file of type: :values.',
     'min'       => [
+
         'numeric' => 'The :attribute must be at least :min.',
         'file'    => 'The :attribute must be at least :min kilobytes.',
         'string'  => 'The :attribute must be at least :min characters.',
@@ -85,6 +88,7 @@ return [
     'unique'   => 'The :attribute has already been taken.',
     'uploaded' => 'The :attribute failed to upload.',
     'url'      => 'The :attribute format is invalid.',
+
 
     /*
     |--------------------------------------------------------------------------

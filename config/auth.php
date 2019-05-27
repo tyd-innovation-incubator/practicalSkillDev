@@ -15,6 +15,7 @@ return [
 
     'defaults' => [
         'guard'     => 'web',
+
         'passwords' => 'users',
     ],
 
@@ -53,6 +54,7 @@ return [
 
         'administrator' => [
             'driver'   => 'session',
+
             'provider' => 'users',
         ],
     ],
@@ -78,6 +80,7 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model'  => App\Models\User::class,
+
         ],
 
         // 'users' => [
@@ -106,6 +109,7 @@ return [
             'provider' => 'users',
             'table'    => 'password_resets',
             'expire'   => 60,
+
         ],
     ],
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Profile;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Repositories\Access\UserRepository;
 use Illuminate\Http\Request;
 
 class ProfileController extends Controller
@@ -14,6 +15,7 @@ class ProfileController extends Controller
     public function __construct()
     {
 
+        $this->users = new UserRepository();
     }
 
     public function educationDetails($user)
@@ -25,11 +27,13 @@ class ProfileController extends Controller
 
     public function storeEducationDetails(Request $request,$id)
     {
+    $this->users->storeEducationDetails($id);
+        dd($users);
         $user = User::find($id);
 
+        dd($request);
 
 
 
-        dd($user);
     }
 }

@@ -23,8 +23,10 @@ class UserRepository extends BaseRepository
     }
 
 
-    public function storeEducationDetails()
+    public function storeEducationDetails($id)
     {
 
+        dd($id);
     }
 }
+

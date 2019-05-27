@@ -33,4 +33,5 @@
         "password-strength-meter": "^1.2.2",
         "pusher-js": "^4.4.0"
     }
+
 }
