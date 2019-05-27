@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2 col-sm-3 col-xs-12"> <a href="{!! route('welcome') !!}" class="logo">
-                    <img src="images/LOGO.png" alt="" /></a>
+                    <img src="{!! url('images/LOGO.png') !!}" alt="" /></a>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                 </div>
@@ -17,9 +17,24 @@
                         <ul class="nav navbar-nav">
                             @guest
                             <li class="active"><a href="{!! route('welcome') !!}">Home</a> </li>
-                                <li class=""><a href="cms/about-us.html">Candidates</a> </li>
+                            <li class="dropdown"><a href="contact-us.html">Candidate<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class=""><a href="cms/about-us.html">Browse Candidate</a> </li>
+                                    <li class=""><a href="cms/about-us.html">Training List</a> </li>
+                                    <li class=""><a href="cms/about-us.html">Post A Resume</a> </li>
+                                    <li class=""><a href="cms/about-us.html">Candidate Dashboard</a> </li>
 
-                            <li class=""><a href="cms/about-us.html">Companies</a> </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="contact-us.html">Company<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class=""><a href="cms/about-us.html">Browser Candidates</a> </li>
+                                    <li class=""><a href="cms/about-us.html">Post A Training</a> </li>
+                                    <li class=""><a href="cms/about-us.html">Company Dashboard</a> </li>
+
+
+                                </ul>
+                            </li>
                             <li class=""><a href="cms/about-us.html">Soft Skills</a> </li>
                             <li class="dropdown"><a href="contact-us.html">Resources<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
@@ -32,11 +47,24 @@
 
                             <li class="active"><a href="{!! route('welcome') !!}">Home</a> </li>
                             {{--@if($user->user_account == 3)--}}
-                            <li class=""><a href="cms/about-us.html">Candidates</a> </li>
-                            {{--@else--}}
+                                <li class="dropdown"><a href="contact-us.html">Candidate<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li class=""><a href="cms/about-us.html">Browse Candidate</a> </li>
+                                        <li class=""><a href="cms/about-us.html">Training List</a> </li>
+                                        <li class=""><a href="cms/about-us.html">Post A Resume</a> </li>
+                                        <li class=""><a href="cms/about-us.html">Candidate Dashboard</a> </li>
 
-                                {{--@endif--}}
-                            <li class=""><a href="cms/about-us.html">Companies</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="contact-us.html">Company<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li class=""><a href="cms/about-us.html">Browser Candidates</a> </li>
+                                        <li class=""><a href="cms/about-us.html">Post A Training</a> </li>
+                                        <li class=""><a href="cms/about-us.html">Company Dashboard</a> </li>
+
+
+                                    </ul>
+                                </li>
                             <li class=""><a href="cms/about-us.html">Soft Skills</a> </li>
                             <li class="dropdown"><a href="contact-us.html">Resources<span class="caret"></span></a>
                             <ul class="dropdown-menu">

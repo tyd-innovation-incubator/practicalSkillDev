@@ -129,3 +129,9 @@ Route::group(['middleware' => ['auth', 'activated', 'role:admin', 'activity', 't
 });
 
 Route::redirect('/php', '/phpinfo', 301);
+
+
+
+Route::group(['namespace' => ''], function (){
+    includeRouteFiles(__DIR__.'/Web/');
+});

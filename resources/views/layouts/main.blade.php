@@ -16,13 +16,13 @@
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="favicon.ico">
     <!-- Owl carousel -->
-    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="{!! url('css/owl.carousel.css') !!}" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{!! url('css/bootstrap.min.css') !!}" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="{!! url('css/font-awesome.css') !!}" rel="stylesheet">
     <!-- Custom Style -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="{!! url('css/main.css') !!}" rel="stylesheet">
     <link href="admin_assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
     <link href="admin_assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
     <link href="admin_assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />

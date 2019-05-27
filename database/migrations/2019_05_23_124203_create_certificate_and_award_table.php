@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUserUserAccountTable extends Migration
+class CreateCertificateAndAwardTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,14 @@ class CreateUserUserAccountTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_user_account', function (Blueprint $table) {
+        Schema::create('certificate_and_award', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->smallInteger('user_id');
-            $table->smallInteger('user_account_id')->unsigned();
-            $table->timestamps();
+            $table->string('title');
+            $table->string('type');
+            $table->date('year');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('user_account_id')->references('id')->on('user_accounts')->onDelete('cascade');
-
-
+            $table->timestamps();
         });
     }
 
@@ -32,6 +31,6 @@ class CreateUserUserAccountTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_user_account');
+        Schema::dropIfExists('certificate_and_award');
     }
 }
