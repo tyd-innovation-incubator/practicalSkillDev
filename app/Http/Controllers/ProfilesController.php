@@ -63,11 +63,11 @@ class ProfilesController extends Controller
             abort(404);
         }
 
-        $currentTheme = Theme::find($user->profile->theme_id);
+//        $currentTheme = Theme::find($user->profile->theme_id);
 
         $data = [
             'user'         => $user,
-            'currentTheme' => $currentTheme,
+//            'currentTheme' => $currentTheme,
         ];
 
         return view('profiles.show')->with($data);

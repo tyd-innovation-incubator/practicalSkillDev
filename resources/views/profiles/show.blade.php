@@ -71,7 +71,7 @@
 						</div>
 						<div class="col-md-6">
 
-							<a href="{!! route('profile.edit',$user->name) !!}" style=" ">
+							<a href="{!! route('profile.edit',$user->uuid) !!}" style=" ">
 								<img class="pull-right" style="margin-top: 120px" src="https://img.icons8.com/ultraviolet/40/000000/edit.png">
 							</a>
 
@@ -84,8 +84,17 @@
 							<div class="panel-heading">
 								<h4>Education Level</h4>
 							</div>
+							@foreach($user->educationDetails as $education_detail)
 
-							<a href="{!! route('profile.education_details',$user->id) !!}" style=" ">
+								<h6>{!! $education_detail->university_name !!}</h6>
+
+								<p>{!! $education_detail->degree_name !!}</p>
+								<p>{!! $education_detail->start_date !!} - {!! $education_detail->end_date !!}</p>
+
+								<h6></h6>
+								@endforeach
+
+							<a href="{!! route('profile.education_details',$user->uuid) !!}" style=" ">
 								<img class="pull-right" style="margin-top: 0px" src="https://img.icons8.com/ultraviolet/40/000000/edit.png">
 							</a>
 						</div>
@@ -97,7 +106,7 @@
 								<h4>Skills</h4>
 							</div>
 
-							<a href="{!! route('profile.edit',$user->name) !!}" style=" ">
+							<a href="{!! route('profile.edit',$user->uuid) !!}" style=" ">
 								<img class="pull-right" style="margin-top: 0px" src="https://img.icons8.com/ultraviolet/40/000000/edit.png">
 							</a>
 						</div>
@@ -109,7 +118,7 @@
 								<h4>Project and Portifolio</h4>
 							</div>
 
-							<a href="{!! route('profile.edit',$user->name) !!}" style=" ">
+							<a href="{!! route('profile.edit',$user->uuid) !!}" style=" ">
 								<img class="pull-right" style="margin-top: 0px" src="https://img.icons8.com/ultraviolet/40/000000/edit.png">
 							</a>
 						</div>

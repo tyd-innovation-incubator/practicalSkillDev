@@ -22,16 +22,11 @@
         "jeremykenedy/laravel2step": "^1.1",
         "jeremykenedy/uuid": "^3.1",
         "laravel/framework": "5.8.*",
-        "laravel/socialite": "^3.0",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.5",
         "pusher/pusher-php-server": "^3.0",
         "rap2hpoutre/laravel-log-viewer": "^0.22.1",
-        "socialiteproviders/37signals": "^3.0",
-        "socialiteproviders/generators": "^2.0",
-        "socialiteproviders/instagram": "^3.0",
-        "socialiteproviders/twitch": "^3.0",
-        "socialiteproviders/youtube": "^3.0",
+
         "webpatser/laravel-uuid": "^3.0"
 
     },

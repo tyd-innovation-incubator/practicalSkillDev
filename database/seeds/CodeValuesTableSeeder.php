@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class CodeValueCodeTableSeeder extends Seeder
+class CodeValuesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.

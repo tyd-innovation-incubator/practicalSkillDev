@@ -16,6 +16,7 @@ class EducationDetail extends Model
 
 
 
+    protected $guarded = [];
 
 
 

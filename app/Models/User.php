@@ -94,7 +94,7 @@ class User extends Authenticatable
 
     public function educationDetails()
     {
-        return $this->belongsToMany(EducationDetail::class);
+        return $this->hasMany(EducationDetail::class);
     }
 
 
